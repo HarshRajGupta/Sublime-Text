@@ -1,0 +1,13 @@
+// Settings in here override those in "LSP-copilot/LSP-copilot.sublime-settings"
+{
+    "settings": {
+        "auto_ask_completions": true,
+        "debug": true,
+        "hook_to_auto_complete_command": true,
+        "local_checks": true,
+        "telemetry": true,
+        "completion_style": "popup",
+    },
+    "enabled": true,
+    "selector": "source.cpp",
+}

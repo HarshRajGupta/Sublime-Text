@@ -1,0 +1,29 @@
+[
+    {
+        "caption": "Terminus: Open iPython",
+        "command": "terminus_open",
+        "args": {
+            "cmd": "ipython",
+            "cwd": "${file_path:${folder}}",
+            "title": "iPython"
+        }
+    },
+    {
+        "caption": "Terminus: Open Terminal",
+        "command": "terminus_open",
+        "args": {
+            "cmd": "gnome-terminal",
+            "cwd": "${file_path:${folder}}",
+            "title": "Terminal"
+        }
+    },
+    {
+        "caption": "Terminus: Open NS",
+        "command": "terminus_open",
+        "args": {
+            "cmd": "ns",
+            "cwd": "${file_path:${folder}}",
+            "title": "NS"
+        }
+    }
+]

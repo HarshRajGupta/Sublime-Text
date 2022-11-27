@@ -1,0 +1,72 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+    "variables":
+    {
+        "white3": "rgb(187, 210, 233)",
+        "pink": "hsl(300, 30%, 68%)",
+        "background": "rgb(16, 28, 42)",
+        "yellow5": "rgba(166, 172, 185, 0.3)", // comments
+        "selection": "rgba(125, 175, 225, 0.1)",
+        "operator": "hsl(180, 36%, 54%)",
+        "brackets" : "rgb(91.8, 153, 214)",
+    },
+    "globals":
+    {
+        "background": "var(background)",
+        "caret": "color(var(orange) alpha(0.9))",
+        "brackets_foreground": "var(blue)",
+        "brackets_foreground": "var(blue)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(blue)",
+        "selection": "var(selection)",
+        "line_highlight": "var(selection)",
+    },
+    "rules":
+    [
+        {
+            "name": "Function call",
+            "scope": "meta.function-call",
+            "foreground": "var(orange)",
+            // "font_style": "italic"
+        },
+        {
+            "name": "Operators",
+            "scope": "keyword.operator",
+            "foreground": "var(operator)",
+            // "font_style": "bold"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation.separator, punctuation.terminator",
+            "foreground": "var(operator)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(pink)",
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(red2)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation.section",
+            "foreground": "var(brackets)",
+            "font_style": "italic, bold"
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "font_style": "italic, bold"
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "font_style": "italic"
+        },
+    ]
+}

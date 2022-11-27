@@ -1,0 +1,40 @@
+{
+    "shell_cmd": "g++ \"${file}\" -Wall -D __FAST_IO && ./a.out < input > output 2> log",
+    "working_dir": "/home/harsh/Documents/.cpp",
+    "variants": [
+        {
+            "name": "Run",
+            "target": "terminus_open",
+            "auto_close": false,
+            "shell_cmd": "g++ \"${file}\" -o \"/home/harsh/Documents/.cpp/a.out\" -D __FAST_IO && \"/home/harsh/Documents/.cpp/a.out\"",
+            "timeit": true,
+            "title": "Programme",
+            "post_window_hooks": [
+                [
+                    "unselect_to_right"
+                ],
+                [
+                    "select_to_left"
+                ]
+            ],
+        },
+        {
+            "name": "Shell",
+            "target": "terminus_exec",
+            "auto_close": false,
+            "shell_cmd": "g++ \"${file}\" -o \"/home/harsh/Documents/.cpp/a.out\" -D __FAST_IO && \"/home/harsh/Documents/.cpp/a.out\"",
+            "timeit": true,
+            "title": "Programme",
+            "post_window_hooks": [
+                [
+                    "unselect_to_right"
+                ],
+                [
+                    "select_to_left"
+                ]
+            ],
+        },
+    ],
+    "file_regex": "^(..[^:]):([0-9]+):?([0-9]+)?:? (.)$",
+    "selector": "source.c++"
+}

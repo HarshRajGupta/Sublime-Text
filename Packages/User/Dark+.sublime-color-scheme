@@ -1,0 +1,25 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+    "variables": {},
+    "globals": {
+        "foreground": "#fff"
+    },
+    "rules": [
+        {
+            "scope": "string",
+            "foreground": "var(pink)"
+        },
+        {
+            "scope": "string.tag",
+            "foreground": "var(red3)"
+        },
+        {
+            "scope": "string.value",
+            "foreground": "var(red3)"
+        },
+        {
+            "scope": "string.regexp",
+            "foreground": "var(red2)"
+        }
+    ]
+}

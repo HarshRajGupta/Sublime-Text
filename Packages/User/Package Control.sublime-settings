@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Auto Fold",
+		"auto-save",
+		"AutoFoldCode",
+		"BracketHighlighter",
+		"ColorHelper",
+		"LSP",
+		"LSP-copilot",
+		"Origami",
+		"Package Control",
+		"PackageDev",
+		"SideBarEnhancements",
+		"SublimeAStyleFormatter",
+		"SublimeLinter",
+		"SublimeLinter-gcc",
+		"Tabnine",
+		"Terminus",
+	],
+}

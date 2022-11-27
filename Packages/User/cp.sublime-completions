@@ -1,0 +1,100 @@
+{
+    "scope": "source.c++, meta.block.c++, meta.function.c++",
+    "completions": [
+        {
+            "trigger": "v<int>",
+            "contents": "v<int> ",
+            "kind": "variable"
+        },
+        {
+            "trigger": "v<v<int>>",
+            "contents": "v<v<int>> ",
+            "kind": "variable"
+        },
+        {
+            "trigger": "v<bool>",
+            "contents": "v<bool> ",
+            "kind": "variable"
+        },
+        {
+            "trigger": "v<pair<int, int>>",
+            "contents": "v<pair<int, int>> ",
+            "kind": "variable"
+        },
+        {
+            "trigger": "v<string>",
+            "contents": "v<string> ",
+            "kind": "variable"
+        },
+        {
+            "trigger": "set<int>",
+            "contents": "set<int> ",
+            "kind": "variable"
+        },
+        {
+            "trigger": "set<pair<int, int>>",
+            "contents": "set<pair<int, int>>",
+            "kind": "variable"
+        },
+        {
+            "trigger": "set<string>",
+            "contents": "set<string> ",
+            "kind": "variable"
+        },
+        {
+            "trigger": "set<char>",
+            "contents": "set<char> ",
+            "kind": "variable"
+        },
+        {
+            "trigger": "map<int, int>",
+            "contents": "map<int, int> ",
+            "kind": "variable"
+        },
+        {
+            "trigger": "map<string, int>",
+            "contents": "map<string, int> ",
+            "kind": "variable"
+        },
+        {
+            "trigger": "map<int, string>",
+            "contents": "map<int, string> ",
+            "kind": "variable"
+        },
+        {
+            "trigger": "first",
+            "contents": "ft ",
+            "kind": "keyword"
+        },
+        {
+            "trigger": "second",
+            "contents": "sd ",
+            "kind": "keyword"
+        },
+        {
+            "trigger": "push_back",
+            "contents": "push_back ",
+            "kind": "function"
+        },
+        {
+            "trigger": "_for(i)",
+            "contents": "_for(i, $0)",
+            "kind": "keyword"
+        },
+        {
+            "trigger": "cout",
+            "contents": "cout << ",
+            "kind": "snippet"
+        }
+        {
+            "trigger": "cin",
+            "contents": "cin >> ",
+            "kind": "snippet"
+        }
+        {
+            "trigger": "<< \" \" << ",
+            "contents": "<< \" \" << ",
+            "kind": "markup"
+        }
+    ]
+}
