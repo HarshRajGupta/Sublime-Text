@@ -1,0 +1,10 @@
+{
+    "debug_enable": true,
+    "search_in_widgets": true,
+    "align_content_highlight_bar": true,
+    // "high_visibility_enabled_by_default": true,
+    // "content_highlight_bar": true,
+    "show_bracket_popup_always": true,
+    "use_custom_popup_bracket_emphasis": true,
+    "search_threshold": 1000000007
+}

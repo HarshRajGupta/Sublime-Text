@@ -1,0 +1,18 @@
+{
+    "target": "terminus_open",
+    "auto_close": false,
+    "focus": true,
+    "cancel": "terminus_cancel_build",
+    "title": "Programme",
+    "post_window_hooks": [
+        [
+            "unselect_to_right"
+        ],
+        [
+            "select_to_left"
+        ]
+    ],
+    "shell_cmd": "ns \"${file}\"",
+    "working_dir": "$folder",
+    "selector": "source.tcl"
+}

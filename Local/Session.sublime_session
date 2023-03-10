@@ -1,0 +1,2958 @@
+{
+	"file_history":
+	[
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/C++.sublime-build",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/primalityTest.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/bookShop.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/distinctNumbers.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/arrayDescription.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/editDistance.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/c++.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/trilogy.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/appartments.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/concertTickets.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/movieFestival.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/stress.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/staticRangeSum.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/stickLength.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/demo.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/maxSubArrSum.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/sumOf2.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/restaurantCustomers.cpp",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/ActionScript.sublime-package",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/diceCombination.cpp",
+		"/C/Users/Harsh Raj Gupta/Documents/.cpp/input",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/ayu-dark.sublime-color-scheme",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/ayu/ayu-dark.sublime-color-scheme",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Dark+.sublime-color-scheme",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/gridPath.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/removingDigits.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/minimizingCoins.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/coinCombination2.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/coinCombination.cpp",
+		"/C/src/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/debug.h",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Terminus.sublime-build",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/custom_snippet_1.sublime-snippet",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/custom_snippet_3.sublime-snippet",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/custom_snippet_2.sublime-snippet",
+		"/C/src/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/stdc++.h",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Textile.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Scala.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/Documents/.cpp/output",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Monokai.sublime-color-scheme",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/Guna/themes/Guna.sublime-color-scheme",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Guna.sublime-color-scheme",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/Dark.json",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Material-Theme-Darker.sublime-color-scheme",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Clojure.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/pre.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/cookOff@8Feb.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/fleet.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/hack.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/Generator.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/cpp.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/temp.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/weekly@331.cpp",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/SieveOfEratosthenes.sublime-snippet",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/primePrime.cpp",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/FoldingSnippet_1.py",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/testing.cpp",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/FoldingSnippet_2.py",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/inverseModulo.sublime-snippet",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/ceil.sublime-snippet",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/power.sublime-snippet",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/lowerBound.sublime-snippet",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/upperBound.sublime-snippet",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/BinarySearch.sublime-snippet",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/SublimeLinter-gcc/miscellaneous/demo.cpp",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/AutoFoldCode/AutoFoldCode.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/AutoFoldCode.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/Documents/.cpp/log",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/sublime-settings",
+		"/C/Program Files (x86)/MCU 8051 IDE/readme.txt",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/ASP.sublime-package",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/custom_snippet_4.sublime-snippet",
+		"/C/src/MinGW/include/c++/11.2.0/debug.h",
+		"/C/src/MinGW/include/c++/11.2.0/debug/debug.h",
+		"/C/src/MinGW/include/glbinding-aux/debug.h",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Mariana.sublime-color-scheme",
+		"/C/src/PrinceOfPersia_WarriorWithin/Read_Me_Important.txt",
+		"/C/src/PrinceOfPersia_WarriorWithin/Crack/Read_Me_Important.txt",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/Terminus/Terminus.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Terminus.sublime-settings",
+		"/C/msys64/home/Harsh Raj Gupta/.config/fish/config.fish",
+		"/C/msys64/home/Harsh Raj Gupta/.local/share/fish/fish_history",
+		"/C/Users/Harsh Raj Gupta/Desktop/spacefish/tests/spacefish_test_setup.fish",
+		"/C/Users/Harsh Raj Gupta/Desktop/install",
+		"/C/src/debug.h",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/start72.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/luckyPer.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/weekly@328.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/astheticPremutation.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/round@842.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/hello@2023.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/tempRun.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/weekly@326.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/kok.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/coloring.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/addPlusMinusSign.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/knapsack.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/testRun.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/maxSumIncSubSeq.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/C++ Sample Task.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/starters@70.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/sample.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/EasyAssembly.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/nextPermutation.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/autoRun.cpp",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/leetCode_biweekly@18Dec.cpp",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/stdc++.sublime-snippet",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/bits-stdc++.sublime-snippet",
+		"/C/Users/Harsh Raj Gupta/AppData/Local/Temp/MicrosoftEdgeDownloads/de3a0cfa-f328-431c-aa97-034c22acafe9/fileInput.txt",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/.gitignore",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/LSP-copilot/LSP-copilot.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/LSP-copilot.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/.cpp/input",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/README.md",
+		"/C/Linux/Desktop/Comp. Prog/minimumWeightBiPartition.cpp",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/language-ids.sublime-settings",
+		"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/LSP/language-ids.sublime-settings",
+		"/tmp/evince.KV2JV1/Phoenix Color - BTP.joboptions.joboptions",
+		"/home/harsh/Desktop/temp.txt",
+		"/home/harsh/Desktop/otcl/Lab_4.tcl"
+	],
+	"folder_history":
+	[
+		"/G/My Drive/Collab",
+		"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code",
+		"/C/Users/Harsh Raj Gupta/Codes/Comp. Prog",
+		"/C/Linux/Desktop/Comp. Prog",
+		"/home/harsh/Desktop/codesim/src",
+		"/home/harsh/Desktop/otcl",
+		"/home/harsh/Desktop/Comp. Prog"
+	],
+	"last_version": 4143,
+	"last_window_id": 105,
+	"log_indexing": false,
+	"next_update_check": 1678500941,
+	"settings":
+	{
+		"new_window_full_screen": false,
+		"new_window_height": 605.6,
+		"new_window_maximized": true,
+		"new_window_position":
+		[
+			0.0,
+			0.0
+		],
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"in",
+						"#include<bits/stdc++.h>"
+					],
+					[
+						"de",
+						"debug("
+					],
+					[
+						"r",
+						"return res;"
+					],
+					[
+						"builtin_pop",
+						"builtin_popcount"
+					],
+					[
+						"ma",
+						"maxSubArraySum"
+					],
+					[
+						"su",
+						"suffixSum"
+					],
+					[
+						"con",
+						"continue"
+					],
+					[
+						"i",
+						"#include<bits/stdc++.h>"
+					],
+					[
+						"pr",
+						"primePrime[l"
+					],
+					[
+						"p",
+						"primePrime"
+					],
+					[
+						"prim",
+						"primePrime"
+					],
+					[
+						"sie",
+						"Sieve || Primes\tSieve of Eratosthenes"
+					],
+					[
+						"se",
+						"Sieve || Primes\tSieve of Eratosthenes"
+					],
+					[
+						"is",
+						"isPrime(n))"
+					],
+					[
+						"sei",
+						"Sieve || Primes\tSieve of Eratosthenes"
+					],
+					[
+						"ub",
+						"upperBound\tUpper Bound"
+					],
+					[
+						"IN",
+						"#include<bits/stdc++.h>"
+					],
+					[
+						"s",
+						"start"
+					],
+					[
+						"INT",
+						"INT_MAX;"
+					],
+					[
+						"num",
+						"nums.size()"
+					],
+					[
+						"pix",
+						"pixels.size(); ++j)"
+					],
+					[
+						"pi",
+						"pixel.size();"
+					],
+					[
+						"vect",
+						"vector"
+					],
+					[
+						"cou",
+						"countCommonSubstrings"
+					],
+					[
+						"prio",
+						"priority_queue"
+					],
+					[
+						"ra",
+						"rand()"
+					],
+					[
+						"inclu",
+						"#include<bits/stdc++.h>"
+					],
+					[
+						"for",
+						"for (int i=0; i<n; i++)"
+					],
+					[
+						"inc",
+						"#include<bits/stdc++.h>"
+					],
+					[
+						"inv",
+						"invMod\tInverse Modulo"
+					],
+					[
+						"cei",
+						"ceil\tCeil | Greater Divisor"
+					],
+					[
+						"int",
+						"int64_t)__"
+					],
+					[
+						"__",
+						"__NUM"
+					],
+					[
+						"do",
+						"double"
+					],
+					[
+						"po",
+						"power\tBinary Exponentiation"
+					],
+					[
+						"gx",
+						"gx[MOD];"
+					],
+					[
+						"std",
+						"std::string>"
+					],
+					[
+						"_D",
+						"__DEBU_VAR"
+					],
+					[
+						"si",
+						"size() -"
+					],
+					[
+						"di",
+						"divide_into_pairs_with_min_abs_diff"
+					],
+					[
+						"b",
+						"begin"
+					],
+					[
+						"lowe",
+						"lower_bound"
+					],
+					[
+						"fi",
+						"find(arr[i])])])"
+					],
+					[
+						"lo",
+						"longestGoodSequence"
+					],
+					[
+						"email",
+						"email << endl;"
+					],
+					[
+						"add",
+						"address"
+					],
+					[
+						"MIN",
+						"MIN = min(MIN, arr[i]);"
+					],
+					[
+						"al",
+						"allPrimes"
+					],
+					[
+						"S",
+						"Solution"
+					],
+					[
+						"while",
+						"while(!ar.empty())"
+					],
+					[
+						"re",
+						"return"
+					],
+					[
+						"ar",
+						"ar.top()"
+					],
+					[
+						"a",
+						"ar.empty()) {"
+					],
+					[
+						"min",
+						"minHeap"
+					],
+					[
+						"d",
+						"debug()"
+					],
+					[
+						"mi",
+						"minimizeSet"
+					],
+					[
+						"arr",
+						"arr[i];"
+					],
+					[
+						"dif",
+						"dif & 1)"
+					],
+					[
+						"co",
+						"continue;"
+					],
+					[
+						"ne",
+						"nextNum]"
+					],
+					[
+						"ci",
+						"cin >> s;"
+					],
+					[
+						"stri",
+						"string"
+					],
+					[
+						"bin",
+						"binarySearch\tBinary Search"
+					],
+					[
+						"bina",
+						"binarySearch\tBinarySearch"
+					],
+					[
+						"ios",
+						"#include <iostream>\tiostream"
+					],
+					[
+						"pre",
+						"prefixSum"
+					],
+					[
+						"sol",
+						"Solution"
+					],
+					[
+						"od",
+						"oddDeg[1])"
+					],
+					[
+						"vector",
+						"vector<int>"
+					],
+					[
+						"pu",
+						"push_back(e[j"
+					],
+					[
+						"ana",
+						"ana(words[i])"
+					],
+					[
+						"wo",
+						"wordSet"
+					],
+					[
+						"w",
+						"words"
+					],
+					[
+						"ch",
+						"charRes"
+					],
+					[
+						"pus",
+						"push_back"
+					],
+					[
+						"Sys",
+						"System.out.println"
+					],
+					[
+						"cls",
+						"class"
+					],
+					[
+						"gr",
+						"graph[src][i]."
+					],
+					[
+						"sz",
+						"sz(graph);"
+					],
+					[
+						"c",
+						"count"
+					],
+					[
+						"vecto",
+						"vector<int>"
+					],
+					[
+						"m",
+						"mark"
+					],
+					[
+						"str",
+						"start"
+					],
+					[
+						"mar",
+						"mark = false;"
+					],
+					[
+						"ret",
+						"return true;"
+					],
+					[
+						"pow",
+						"powersOfK"
+					],
+					[
+						"st",
+						"std::vector<bool>();"
+					],
+					[
+						"isNo",
+						"isNotPrime"
+					],
+					[
+						"bis",
+						"bitset<100001>"
+					],
+					[
+						"one",
+						"oneF = true;"
+					],
+					[
+						"prime",
+						"primesum"
+					],
+					[
+						"pair",
+						"pair<int, int>>"
+					],
+					[
+						"S2",
+						"S2[s2[i]]++;"
+					],
+					[
+						"s1",
+						"s1[i] < 'z')"
+					],
+					[
+						"bit",
+						"bitset"
+					],
+					[
+						"cin",
+						"cin >> n;"
+					],
+					[
+						"_for",
+						"_for(i, n)"
+					],
+					[
+						"time",
+						"time(null"
+					],
+					[
+						"rand",
+						"rand()%n;"
+					],
+					[
+						"e",
+						"erase"
+					],
+					[
+						"super",
+						"superFix"
+					],
+					[
+						"f",
+						"firstNeg"
+					],
+					[
+						"allS",
+						"allSubArrSum"
+					],
+					[
+						"te",
+						"template"
+					],
+					[
+						"tem",
+						"template"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Compile and Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Tab"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Compile and Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run + Commit"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run + Push"
+						],
+						[
+							"Packages/User/Terminus.sublime-build",
+							""
+						],
+						[
+							"Packages/User/Terminus.sublime-build",
+							"Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Run + Commit"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run + Commit"
+						],
+						[
+							"Packages/User/Terminus.sublime-build",
+							""
+						],
+						[
+							"Packages/User/Terminus.sublime-build",
+							"Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Run + Commit"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Windows"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Tab"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Windows"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Tab"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Windows"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows without git"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Tab"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Windows without git"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows without git"
+						],
+						[
+							"Packages/User/Terminus.sublime-build",
+							""
+						],
+						[
+							"Packages/User/Terminus.sublime-build",
+							"Run in Shell"
+						]
+					],
+					[
+						"Packages/User/Terminus.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Windows"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Windows"
+					]
+				],
+				[
+					[
+						[
+							"Packages/Java/Ant.sublime-build",
+							""
+						],
+						[
+							"Packages/Java/JavaC.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/Java/JavaC.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						],
+						[
+							"Packages/User/python.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"vie",
+						"View Package File"
+					],
+					[
+						"view",
+						"View Package File"
+					],
+					[
+						"set",
+						"Set Syntax: Textile"
+					],
+					[
+						"set sycl",
+						"Set Syntax: Clojure"
+					],
+					[
+						" set sys",
+						"Set Syntax: Scala"
+					],
+					[
+						"v",
+						"View Package File"
+					],
+					[
+						"b",
+						"Build: Cancel"
+					],
+					[
+						"ui",
+						"UI: Select Color Scheme"
+					],
+					[
+						"temp",
+						"Snippet: C++ Template 2"
+					],
+					[
+						"tem",
+						"Snippet: C++ Template 1"
+					],
+					[
+						"vi",
+						"View Package File"
+					],
+					[
+						"view ",
+						"View Package File"
+					],
+					[
+						"set sca",
+						"Set Syntax: Scala"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"can",
+						"Build: Cancel"
+					],
+					[
+						"viw",
+						"View Package File"
+					],
+					[
+						"aut",
+						"AutoFoldCode: Open Settings"
+					],
+					[
+						"pac",
+						"Package Control: Remove Package"
+					],
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"set sys",
+						"Set Syntax: Scala"
+					],
+					[
+						"set sclo",
+						"Set Syntax: Clojure"
+					],
+					[
+						"set sy",
+						"Set Syntax: Textile"
+					],
+					[
+						"set syntax: clo",
+						"Set Syntax: Clojure"
+					],
+					[
+						"c",
+						"Build: Cancel"
+					],
+					[
+						"packa",
+						"Package Control: Enable Package"
+					],
+					[
+						"lsp",
+						"LSP: Disable Language Server Globally"
+					],
+					[
+						"termin",
+						"Terminus: List Shells"
+					],
+					[
+						"dis",
+						"LSP: Disable Language Server Globally"
+					],
+					[
+						"rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"bu",
+						"Build: Cancel"
+					],
+					[
+						"prefer",
+						"Preferences: Settings"
+					],
+					[
+						"cop",
+						"Copilot: Check Status"
+					],
+					[
+						"tabni",
+						"⌬ tabnine: Open Configuration"
+					],
+					[
+						"copi",
+						"Copilot: Sign In"
+					],
+					[
+						"enab",
+						"LSP: Enable Language Server Globally"
+					],
+					[
+						"disa",
+						"LSP: Disable Language Server Globally"
+					],
+					[
+						"ins",
+						"Install Package Control"
+					],
+					[
+						"ser",
+						"Set Syntax: Rust"
+					],
+					[
+						"re",
+						"Package Control: Remove Package"
+					],
+					[
+						"sign",
+						"Copilot: Sign In"
+					],
+					[
+						"copilot",
+						"Preferences: LSP-copilot Settings"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"lsp ",
+						"LSP: Disable Language Server Globally"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/C++.sublime-build",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/primalityTest.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/bookShop.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/distinctNumbers.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/arrayDescription.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/editDistance.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/c++.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/trilogy.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/appartments.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/concertTickets.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/movieFestival.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/stress.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/staticRangeSum.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/stickLength.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/demo.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/maxSubArrSum.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/sumOf2.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/restaurantCustomers.cpp",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/ActionScript.sublime-package",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/diceCombination.cpp",
+				"/C/Users/Harsh Raj Gupta/Documents/.cpp/input",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/gridPath.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/removingDigits.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/minimizingCoins.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/coinCombination2.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/coinCombination.cpp",
+				"/C/src/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/debug.h",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Terminus.sublime-build",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/custom_snippet_1.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/custom_snippet_3.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/custom_snippet_2.sublime-snippet",
+				"/C/src/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/stdc++.h",
+				"/C/Users/Harsh Raj Gupta/Documents/.cpp/output",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/pre.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/cookOff@8Feb.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/fleet.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/hack.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/Generator.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/cpp.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/temp.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/weekly@331.cpp",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/SieveOfEratosthenes.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/primePrime.cpp",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/FoldingSnippet_1.py",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/testing.cpp",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/FoldingSnippet_2.py",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/inverseModulo.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/ceil.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/power.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/lowerBound.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/upperBound.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/BinarySearch.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/SublimeLinter-gcc/miscellaneous/demo.cpp",
+				"/C/Users/Harsh Raj Gupta/Documents/.cpp/log",
+				"/C/Program Files (x86)/MCU 8051 IDE/readme.txt",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/ASP.sublime-package",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/custom_snippet_4.sublime-snippet",
+				"/C/src/MinGW/include/c++/11.2.0/debug.h",
+				"/C/src/MinGW/include/c++/11.2.0/debug/debug.h",
+				"/C/src/MinGW/include/glbinding-aux/debug.h",
+				"/C/src/PrinceOfPersia_WarriorWithin/Read_Me_Important.txt",
+				"/C/src/PrinceOfPersia_WarriorWithin/Crack/Read_Me_Important.txt",
+				"/C/msys64/home/Harsh Raj Gupta/.config/fish/config.fish",
+				"/C/msys64/home/Harsh Raj Gupta/.local/share/fish/fish_history",
+				"/C/Users/Harsh Raj Gupta/Desktop/spacefish/tests/spacefish_test_setup.fish",
+				"/C/Users/Harsh Raj Gupta/Desktop/install",
+				"/C/src/debug.h",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/start72.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/luckyPer.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/weekly@328.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/astheticPremutation.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/round@842.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/hello@2023.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/tempRun.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/weekly@326.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/kok.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/coloring.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/addPlusMinusSign.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/knapsack.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/testRun.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/maxSumIncSubSeq.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/C++ Sample Task.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/starters@70.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/sample.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/EasyAssembly.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/nextPermutation.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/autoRun.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/leetCode_biweekly@18Dec.cpp",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/stdc++.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/bits-stdc++.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Local/Temp/MicrosoftEdgeDownloads/de3a0cfa-f328-431c-aa97-034c22acafe9/fileInput.txt",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/.gitignore",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/.cpp/input",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/README.md",
+				"/C/Linux/Desktop/Comp. Prog/minimumWeightBiPartition.cpp",
+				"/tmp/evince.KV2JV1/Phoenix Color - BTP.joboptions.joboptions",
+				"/home/harsh/Desktop/temp.txt",
+				"/home/harsh/Desktop/otcl/Lab_4.tcl",
+				"/home/harsh/Desktop/Dragged Text-SunNov20202214-44-01GMT+0530(IndiaStandardTime)",
+				"/home/harsh/Documents/.cpp/log",
+				"/mnt/src/debug.h",
+				"/home/harsh/Desktop/Comp. Prog/kickStart@H.cpp",
+				"/home/harsh/Desktop/Comp. Prog/foobar.md",
+				"/home/harsh/Documents/.cpp/Empty File",
+				"/home/harsh/Desktop/Network-Simulator/lab_2.tcl",
+				"/home/harsh/Desktop/Network-Simulator/Lab_3.tcl",
+				"/home/harsh/Desktop/AlgoZenith/___All_Errors.txt",
+				"/home/harsh/Desktop/AlgoZenith/[AlgoZenith] Applied Algo & DS for Coding Competitions (@ Link_Matters)/Module 4 Week 16/Instagram - @Link_Matters .txt_Error.txt",
+				"/home/harsh/Desktop/Comp. Prog/starter61.cpp",
+				"/home/harsh/Desktop/Comp. Prog/o2.out",
+				"/home/harsh/Documents/.cpp/tc3.in",
+				"/home/harsh/Desktop/Comp. Prog/tc2.in",
+				"/home/harsh/Desktop/Comp. Prog/tc1.in",
+				"/home/harsh/Desktop/Comp. Prog/tc4.in",
+				"/home/harsh/Desktop/Comp. Prog/testCase.cpp",
+				"/home/harsh/Desktop/Comp. Prog/o1.out",
+				"/home/harsh/Desktop/Comp. Prog/o3.out",
+				"/home/harsh/Desktop/Comp. Prog/o4.out",
+				"/home/harsh/Desktop/Comp. Prog/o5.out",
+				"/home/harsh/Desktop/Comp. Prog/tc5.in",
+				"/home/harsh/Desktop/Comp. Prog/simron.cpp",
+				"/home/harsh/Desktop/Comp. Prog/kickStart@G.cpp",
+				"/home/harsh/Desktop/Comp. Prog/temp1.cpp",
+				"/home/harsh/Desktop/otcl/.tcl",
+				"/home/harsh/Desktop/ShaswatNayak_Portfolio/.gitignore",
+				"/home/harsh/.config/sublime-text/Packages/User/Monokai.sublime-color-scheme",
+				"/home/harsh/.config/sublime-text/Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+				"/home/harsh/Desktop/Comp. Prog/debug.h"
+			],
+			"find":
+			{
+				"height": 38.4
+			},
+			"find_in_files":
+			{
+				"height": 159.2,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 38.4
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.LSP Log Panel":
+			{
+				"height": 0.0
+			},
+			"output.SublimeLinter":
+			{
+				"height": 0.0
+			},
+			"output.Terminus Build Results":
+			{
+				"height": 210.399993896
+			},
+			"output.astyle_error_message":
+			{
+				"height": 0.0
+			},
+			"output.diagnostics":
+			{
+				"height": 0.0
+			},
+			"output.exec":
+			{
+				"height": 129.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups-dummy":
+			{
+				"height": 0.0
+			},
+			"output.unsaved_changes":
+			{
+				"height": 264.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 73.6
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 251.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 810.4
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"in",
+						"#include<bits/stdc++.h>"
+					],
+					[
+						"de",
+						"debug("
+					],
+					[
+						"r",
+						"return res;"
+					],
+					[
+						"builtin_pop",
+						"builtin_popcount"
+					],
+					[
+						"ma",
+						"maxSubArraySum"
+					],
+					[
+						"su",
+						"suffixSum"
+					],
+					[
+						"con",
+						"continue"
+					],
+					[
+						"i",
+						"#include<bits/stdc++.h>"
+					],
+					[
+						"pr",
+						"primePrime[l"
+					],
+					[
+						"p",
+						"primePrime"
+					],
+					[
+						"prim",
+						"primePrime"
+					],
+					[
+						"sie",
+						"Sieve || Primes\tSieve of Eratosthenes"
+					],
+					[
+						"se",
+						"Sieve || Primes\tSieve of Eratosthenes"
+					],
+					[
+						"is",
+						"isPrime(n))"
+					],
+					[
+						"sei",
+						"Sieve || Primes\tSieve of Eratosthenes"
+					],
+					[
+						"ub",
+						"upperBound\tUpper Bound"
+					],
+					[
+						"IN",
+						"#include<bits/stdc++.h>"
+					],
+					[
+						"s",
+						"start"
+					],
+					[
+						"INT",
+						"INT_MAX;"
+					],
+					[
+						"num",
+						"nums.size()"
+					],
+					[
+						"pix",
+						"pixels.size(); ++j)"
+					],
+					[
+						"pi",
+						"pixel.size();"
+					],
+					[
+						"vect",
+						"vector"
+					],
+					[
+						"cou",
+						"countCommonSubstrings"
+					],
+					[
+						"prio",
+						"priority_queue"
+					],
+					[
+						"ra",
+						"rand()"
+					],
+					[
+						"inclu",
+						"#include<bits/stdc++.h>"
+					],
+					[
+						"for",
+						"for (int i=0; i<n; i++)"
+					],
+					[
+						"inc",
+						"#include<bits/stdc++.h>"
+					],
+					[
+						"inv",
+						"invMod\tInverse Modulo"
+					],
+					[
+						"cei",
+						"ceil\tCeil | Greater Divisor"
+					],
+					[
+						"int",
+						"int64_t)__"
+					],
+					[
+						"__",
+						"__NUM"
+					],
+					[
+						"do",
+						"double"
+					],
+					[
+						"po",
+						"power\tBinary Exponentiation"
+					],
+					[
+						"gx",
+						"gx[MOD];"
+					],
+					[
+						"std",
+						"std::string>"
+					],
+					[
+						"_D",
+						"__DEBU_VAR"
+					],
+					[
+						"si",
+						"size() -"
+					],
+					[
+						"di",
+						"divide_into_pairs_with_min_abs_diff"
+					],
+					[
+						"b",
+						"begin"
+					],
+					[
+						"lowe",
+						"lower_bound"
+					],
+					[
+						"fi",
+						"find(arr[i])])])"
+					],
+					[
+						"lo",
+						"longestGoodSequence"
+					],
+					[
+						"email",
+						"email << endl;"
+					],
+					[
+						"add",
+						"address"
+					],
+					[
+						"MIN",
+						"MIN = min(MIN, arr[i]);"
+					],
+					[
+						"al",
+						"allPrimes"
+					],
+					[
+						"S",
+						"Solution"
+					],
+					[
+						"while",
+						"while(!ar.empty())"
+					],
+					[
+						"re",
+						"return"
+					],
+					[
+						"ar",
+						"ar.top()"
+					],
+					[
+						"a",
+						"ar.empty()) {"
+					],
+					[
+						"min",
+						"minHeap"
+					],
+					[
+						"d",
+						"debug()"
+					],
+					[
+						"mi",
+						"minimizeSet"
+					],
+					[
+						"arr",
+						"arr[i];"
+					],
+					[
+						"dif",
+						"dif & 1)"
+					],
+					[
+						"co",
+						"continue;"
+					],
+					[
+						"ne",
+						"nextNum]"
+					],
+					[
+						"ci",
+						"cin >> s;"
+					],
+					[
+						"stri",
+						"string"
+					],
+					[
+						"bin",
+						"binarySearch\tBinary Search"
+					],
+					[
+						"bina",
+						"binarySearch\tBinarySearch"
+					],
+					[
+						"ios",
+						"#include <iostream>\tiostream"
+					],
+					[
+						"pre",
+						"prefixSum"
+					],
+					[
+						"sol",
+						"Solution"
+					],
+					[
+						"od",
+						"oddDeg[1])"
+					],
+					[
+						"vector",
+						"vector<int>"
+					],
+					[
+						"pu",
+						"push_back(e[j"
+					],
+					[
+						"ana",
+						"ana(words[i])"
+					],
+					[
+						"wo",
+						"wordSet"
+					],
+					[
+						"w",
+						"words"
+					],
+					[
+						"ch",
+						"charRes"
+					],
+					[
+						"pus",
+						"push_back"
+					],
+					[
+						"Sys",
+						"System.out.println"
+					],
+					[
+						"cls",
+						"class"
+					],
+					[
+						"gr",
+						"graph[src][i]."
+					],
+					[
+						"sz",
+						"sz(graph);"
+					],
+					[
+						"c",
+						"count"
+					],
+					[
+						"vecto",
+						"vector<int>"
+					],
+					[
+						"m",
+						"mark"
+					],
+					[
+						"str",
+						"start"
+					],
+					[
+						"mar",
+						"mark = false;"
+					],
+					[
+						"ret",
+						"return true;"
+					],
+					[
+						"pow",
+						"powersOfK"
+					],
+					[
+						"st",
+						"std::vector<bool>();"
+					],
+					[
+						"isNo",
+						"isNotPrime"
+					],
+					[
+						"bis",
+						"bitset<100001>"
+					],
+					[
+						"one",
+						"oneF = true;"
+					],
+					[
+						"prime",
+						"primesum"
+					],
+					[
+						"pair",
+						"pair<int, int>>"
+					],
+					[
+						"S2",
+						"S2[s2[i]]++;"
+					],
+					[
+						"s1",
+						"s1[i] < 'z')"
+					],
+					[
+						"bit",
+						"bitset"
+					],
+					[
+						"cin",
+						"cin >> n;"
+					],
+					[
+						"_for",
+						"_for(i, n)"
+					],
+					[
+						"time",
+						"time(null"
+					],
+					[
+						"rand",
+						"rand()%n;"
+					],
+					[
+						"e",
+						"erase"
+					],
+					[
+						"super",
+						"superFix"
+					],
+					[
+						"f",
+						"firstNeg"
+					],
+					[
+						"allS",
+						"allSubArrSum"
+					],
+					[
+						"te",
+						"template"
+					],
+					[
+						"tem",
+						"template"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "",
+					"file": "/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/ActionScript.sublime-package",
+					"file_size": 0,
+					"file_write_time": 133228881574567064,
+					"settings":
+					{
+						"buffer_size": 0,
+						"encoding": "UTF-8",
+						"line_ending": "Windows"
+					},
+					"undo_stack":
+					[
+					]
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Compile and Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Tab"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Compile and Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run + Commit"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run + Push"
+						],
+						[
+							"Packages/User/Terminus.sublime-build",
+							""
+						],
+						[
+							"Packages/User/Terminus.sublime-build",
+							"Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Run + Commit"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run + Commit"
+						],
+						[
+							"Packages/User/Terminus.sublime-build",
+							""
+						],
+						[
+							"Packages/User/Terminus.sublime-build",
+							"Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Run + Commit"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Windows"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Tab"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Windows"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Tab"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Windows"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows without git"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Tab"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run in Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Windows without git"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Linux"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows without git"
+						],
+						[
+							"Packages/User/Terminus.sublime-build",
+							""
+						],
+						[
+							"Packages/User/Terminus.sublime-build",
+							"Run in Shell"
+						]
+					],
+					[
+						"Packages/User/Terminus.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Windows"
+					]
+				],
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Windows"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Run"
+						],
+						[
+							"Packages/User/C++.sublime-build",
+							"Shell"
+						]
+					],
+					[
+						"Packages/User/C++.sublime-build",
+						"Windows"
+					]
+				],
+				[
+					[
+						[
+							"Packages/Java/Ant.sublime-build",
+							""
+						],
+						[
+							"Packages/Java/JavaC.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/Java/JavaC.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						],
+						[
+							"Packages/User/python.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"vie",
+						"View Package File"
+					],
+					[
+						"view",
+						"View Package File"
+					],
+					[
+						"set",
+						"Set Syntax: Textile"
+					],
+					[
+						"set sycl",
+						"Set Syntax: Clojure"
+					],
+					[
+						" set sys",
+						"Set Syntax: Scala"
+					],
+					[
+						"v",
+						"View Package File"
+					],
+					[
+						"b",
+						"Build: Cancel"
+					],
+					[
+						"ui",
+						"UI: Select Color Scheme"
+					],
+					[
+						"temp",
+						"Snippet: C++ Template 2"
+					],
+					[
+						"tem",
+						"Snippet: C++ Template 1"
+					],
+					[
+						"vi",
+						"View Package File"
+					],
+					[
+						"view ",
+						"View Package File"
+					],
+					[
+						"set sca",
+						"Set Syntax: Scala"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"can",
+						"Build: Cancel"
+					],
+					[
+						"viw",
+						"View Package File"
+					],
+					[
+						"aut",
+						"AutoFoldCode: Open Settings"
+					],
+					[
+						"pac",
+						"Package Control: Remove Package"
+					],
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"set sys",
+						"Set Syntax: Scala"
+					],
+					[
+						"set sclo",
+						"Set Syntax: Clojure"
+					],
+					[
+						"set sy",
+						"Set Syntax: Textile"
+					],
+					[
+						"set syntax: clo",
+						"Set Syntax: Clojure"
+					],
+					[
+						"c",
+						"Build: Cancel"
+					],
+					[
+						"packa",
+						"Package Control: Enable Package"
+					],
+					[
+						"lsp",
+						"LSP: Disable Language Server Globally"
+					],
+					[
+						"termin",
+						"Terminus: List Shells"
+					],
+					[
+						"dis",
+						"LSP: Disable Language Server Globally"
+					],
+					[
+						"rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"bu",
+						"Build: Cancel"
+					],
+					[
+						"prefer",
+						"Preferences: Settings"
+					],
+					[
+						"cop",
+						"Copilot: Check Status"
+					],
+					[
+						"tabni",
+						"⌬ tabnine: Open Configuration"
+					],
+					[
+						"copi",
+						"Copilot: Sign In"
+					],
+					[
+						"enab",
+						"LSP: Enable Language Server Globally"
+					],
+					[
+						"disa",
+						"LSP: Disable Language Server Globally"
+					],
+					[
+						"ins",
+						"Install Package Control"
+					],
+					[
+						"ser",
+						"Set Syntax: Rust"
+					],
+					[
+						"re",
+						"Package Control: Remove Package"
+					],
+					[
+						"sign",
+						"Copilot: Sign In"
+					],
+					[
+						"copilot",
+						"Preferences: LSP-copilot Settings"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"lsp ",
+						"LSP: Disable Language Server Globally"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/C++.sublime-build",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/primalityTest.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/bookShop.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/distinctNumbers.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/arrayDescription.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/editDistance.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/c++.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/trilogy.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/appartments.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/concertTickets.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/movieFestival.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/stress.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/staticRangeSum.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/stickLength.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/demo.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/maxSubArrSum.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/sumOf2.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/restaurantCustomers.cpp",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/ActionScript.sublime-package",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/diceCombination.cpp",
+				"/C/Users/Harsh Raj Gupta/Documents/.cpp/input",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/gridPath.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/removingDigits.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/minimizingCoins.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/coinCombination2.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/coinCombination.cpp",
+				"/C/src/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/debug.h",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/Terminus.sublime-build",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/custom_snippet_1.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/custom_snippet_3.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/custom_snippet_2.sublime-snippet",
+				"/C/src/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/stdc++.h",
+				"/C/Users/Harsh Raj Gupta/Documents/.cpp/output",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/pre.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/cookOff@8Feb.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/fleet.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/hack.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/Generator.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/cpp.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/temp.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/weekly@331.cpp",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/SieveOfEratosthenes.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/primePrime.cpp",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/FoldingSnippet_1.py",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/testing.cpp",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/FoldingSnippet_2.py",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/inverseModulo.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/ceil.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/power.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/lowerBound.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/upperBound.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/BinarySearch.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/SublimeLinter-gcc/miscellaneous/demo.cpp",
+				"/C/Users/Harsh Raj Gupta/Documents/.cpp/log",
+				"/C/Program Files (x86)/MCU 8051 IDE/readme.txt",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/ASP.sublime-package",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/custom_snippet_4.sublime-snippet",
+				"/C/src/MinGW/include/c++/11.2.0/debug.h",
+				"/C/src/MinGW/include/c++/11.2.0/debug/debug.h",
+				"/C/src/MinGW/include/glbinding-aux/debug.h",
+				"/C/src/PrinceOfPersia_WarriorWithin/Read_Me_Important.txt",
+				"/C/src/PrinceOfPersia_WarriorWithin/Crack/Read_Me_Important.txt",
+				"/C/msys64/home/Harsh Raj Gupta/.config/fish/config.fish",
+				"/C/msys64/home/Harsh Raj Gupta/.local/share/fish/fish_history",
+				"/C/Users/Harsh Raj Gupta/Desktop/spacefish/tests/spacefish_test_setup.fish",
+				"/C/Users/Harsh Raj Gupta/Desktop/install",
+				"/C/src/debug.h",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/start72.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/luckyPer.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/weekly@328.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/astheticPremutation.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/round@842.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/hello@2023.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/tempRun.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/weekly@326.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/kok.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/coloring.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/addPlusMinusSign.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/knapsack.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/testRun.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/maxSumIncSubSeq.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/C++ Sample Task.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/starters@70.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/sample.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/EasyAssembly.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/nextPermutation.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/autoRun.cpp",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/leetCode_biweekly@18Dec.cpp",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/stdc++.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/User/bits-stdc++.sublime-snippet",
+				"/C/Users/Harsh Raj Gupta/AppData/Local/Temp/MicrosoftEdgeDownloads/de3a0cfa-f328-431c-aa97-034c22acafe9/fileInput.txt",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/.gitignore",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/.cpp/input",
+				"/C/Users/Harsh Raj Gupta/Codes/Code-n-Code/README.md",
+				"/C/Linux/Desktop/Comp. Prog/minimumWeightBiPartition.cpp",
+				"/tmp/evince.KV2JV1/Phoenix Color - BTP.joboptions.joboptions",
+				"/home/harsh/Desktop/temp.txt",
+				"/home/harsh/Desktop/otcl/Lab_4.tcl",
+				"/home/harsh/Desktop/Dragged Text-SunNov20202214-44-01GMT+0530(IndiaStandardTime)",
+				"/home/harsh/Documents/.cpp/log",
+				"/mnt/src/debug.h",
+				"/home/harsh/Desktop/Comp. Prog/kickStart@H.cpp",
+				"/home/harsh/Desktop/Comp. Prog/foobar.md",
+				"/home/harsh/Documents/.cpp/Empty File",
+				"/home/harsh/Desktop/Network-Simulator/lab_2.tcl",
+				"/home/harsh/Desktop/Network-Simulator/Lab_3.tcl",
+				"/home/harsh/Desktop/AlgoZenith/___All_Errors.txt",
+				"/home/harsh/Desktop/AlgoZenith/[AlgoZenith] Applied Algo & DS for Coding Competitions (@ Link_Matters)/Module 4 Week 16/Instagram - @Link_Matters .txt_Error.txt",
+				"/home/harsh/Desktop/Comp. Prog/starter61.cpp",
+				"/home/harsh/Desktop/Comp. Prog/o2.out",
+				"/home/harsh/Documents/.cpp/tc3.in",
+				"/home/harsh/Desktop/Comp. Prog/tc2.in",
+				"/home/harsh/Desktop/Comp. Prog/tc1.in",
+				"/home/harsh/Desktop/Comp. Prog/tc4.in",
+				"/home/harsh/Desktop/Comp. Prog/testCase.cpp",
+				"/home/harsh/Desktop/Comp. Prog/o1.out",
+				"/home/harsh/Desktop/Comp. Prog/o3.out",
+				"/home/harsh/Desktop/Comp. Prog/o4.out",
+				"/home/harsh/Desktop/Comp. Prog/o5.out",
+				"/home/harsh/Desktop/Comp. Prog/tc5.in",
+				"/home/harsh/Desktop/Comp. Prog/simron.cpp",
+				"/home/harsh/Desktop/Comp. Prog/kickStart@G.cpp",
+				"/home/harsh/Desktop/Comp. Prog/temp1.cpp",
+				"/home/harsh/Desktop/otcl/.tcl",
+				"/home/harsh/Desktop/ShaswatNayak_Portfolio/.gitignore",
+				"/home/harsh/.config/sublime-text/Packages/User/Monokai.sublime-color-scheme",
+				"/home/harsh/.config/sublime-text/Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+				"/home/harsh/Desktop/Comp. Prog/debug.h"
+			],
+			"find":
+			{
+				"height": 38.4
+			},
+			"find_in_files":
+			{
+				"height": 159.2,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/C/Users/Harsh Raj Gupta/AppData/Roaming/Sublime Text/Packages/ActionScript.sublime-package",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+								],
+								"settings":
+								{
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+										},
+										"icon":
+										{
+										},
+										"open":
+										{
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content"
+									],
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 38.4
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.LSP Log Panel":
+			{
+				"height": 0.0
+			},
+			"output.SublimeLinter":
+			{
+				"height": 0.0
+			},
+			"output.Terminus Build Results":
+			{
+				"height": 210.399993896
+			},
+			"output.astyle_error_message":
+			{
+				"height": 0.0
+			},
+			"output.diagnostics":
+			{
+				"height": 0.0
+			},
+			"output.exec":
+			{
+				"height": 129.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups-dummy":
+			{
+				"height": 0.0
+			},
+			"output.unsaved_changes":
+			{
+				"height": 264.0
+			},
+			"pinned_build_system": "",
+			"position": "0,2,3,-1,-1,-1,-1,655,0,0,810,b89db1ea18accc41bfb40b8c53e68be0",
+			"project": "",
+			"replace":
+			{
+				"height": 73.6
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 251.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 105,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+			"/C/Users/Harsh Raj Gupta/Documents/.cpp/Code-n-Code.sublime-workspace",
+			"/home/harsh/Documents/.cpp/comp prog.sublime-workspace"
+		]
+	}
+}

@@ -1,0 +1,10 @@
+// These settings override both User and Default settings for the Clojure syntax
+{
+    // "gutter": false,
+    "line_numbers": false,
+    "font_size": 13,
+    "draw_minimap_border": false,
+    "always_show_minimap_viewport": false,
+    "minimap_horizontal_scrolling": false,
+    "color_scheme": "Packages/Guna/themes/Guna.sublime-color-scheme",
+}

@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[const int lB(const std::vector<int> &arr, const int &t, int l, int r) {
+    if (t > arr[r]) return r;
+    int ans = l - 1;
+    while (l <= r) {
+        int mid = (l + r) / 2;
+        if (arr[mid] >= t)
+            r = mid - 1;
+        else
+            ans = mid, l = mid + 1;
+    }
+    return ans;
+}]]></content>
+    <tabTrigger>lB @lowerBound</tabTrigger>
+    <scope>( source.objc | source.c++ | source.cpp | source.c ) - meta.preprocessor.include - comment - string</scope>
+    <description>Lower Bound</description>
+</snippet>

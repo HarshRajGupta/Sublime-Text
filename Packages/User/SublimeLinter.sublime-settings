@@ -1,0 +1,20 @@
+{
+    "debug": true,
+    "styles": [
+        {
+            "scope": "region.yellowish markup.warning.sublime_linter",
+            "icon": "x",
+            "mark_style": "squiggly_underline",
+            "types": [
+                "warning"
+            ]
+        },
+        {
+            "icon": "x",
+            "mark_style": "solid_underline",
+            "priority": 1,
+            "scope": "region.redish markup.error.sublime_linter"
+        }
+    ],
+    "delay": 0.001,
+}

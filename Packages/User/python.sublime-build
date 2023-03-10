@@ -1,0 +1,30 @@
+{
+    "target": "terminus_open",
+    "auto_close": false,
+    "title": "Programme",
+    "post_window_hooks": [
+        [
+            "unselect_to_right"
+        ],
+        [
+            "select_to_left"
+        ]
+    ],
+    "cmd": [
+        "python3",
+        "-u",
+        "$file"
+    ],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python",
+    "env": {
+        "PYTHONIOENCODING": "utf-8"
+    },
+    "windows": {
+        "cmd": [
+            "py",
+            "-u",
+            "$file"
+        ],
+    },
+}

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[const int ceil (const long double &n, const long double d = 1) {
+    if (n > (d * ((int)(n / d))))
+        return (n / d) + 1;
+    return (n / d);
+}]]></content>
+    <tabTrigger>ceil</tabTrigger>
+    <scope>( source.objc | source.c++ | source.cpp | source.c ) - meta.preprocessor.include - comment - string</scope>
+    <description>Ceil | Greater Divisor</description>
+</snippet>

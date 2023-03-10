@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[const int uB(const std::vector<int> &arr, const int &t, int l, int r) {
+    if (t < arr[l]) return l;
+    int ans = r + 1;
+    while (l <= r) {
+        int mid = (l + r) / 2;
+        if (arr[mid] <= t)
+            l = mid + 1;
+        else
+            ans = mid, r = mid - 1;
+    }
+    return ans;
+}]]></content>
+    <tabTrigger>uB @upperBound</tabTrigger>
+    <scope>( source.objc | source.c++ | source.cpp | source.c ) - meta.preprocessor.include - comment - string</scope>
+    <description>Upper Bound</description>
+</snippet>

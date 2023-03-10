@@ -1,0 +1,13 @@
+// These settings override both User and Default settings for the Textile syntax
+{
+    // "gutter": false,
+    // "line_numbers": false,
+    "font_size": 10.24,
+    "draw_minimap_border": false,
+    "always_show_minimap_viewport": false,
+    "minimap_horizontal_scrolling": false,
+    "fold_buttons": false,
+    "font_face": "fira code retina",
+    "line_padding_top": 2,
+    "line_padding_bottom": 2,
+}

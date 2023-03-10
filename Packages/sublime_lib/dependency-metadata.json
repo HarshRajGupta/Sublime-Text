@@ -1,0 +1,1 @@
+{"version": "1.5.2", "platforms": ["*"], "description": "Utility library for frequently used functionality in Sublime Text library and convenience functions or classes", "url": "https://github.com/SublimeText/sublime_lib/issues", "sublime_text": ">=3000"}

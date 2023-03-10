@@ -1,0 +1,112 @@
+{
+	// "font_face": "open sans",
+	"font_face": "ubuntu mono ligaturized",
+	"font_size": 13,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"indent_to_bracket": true,
+	"draw_minimap_border": true,
+	"always_show_minimap_viewport": true,
+	"match_brackets_angle": true,
+	"line_padding_top": 6,
+	"line_padding_bottom": 6,
+	"save_on_focus_lost": true,
+	"auto_complete_with_fields": true,
+	"auto_complete_cycle": true,
+	"auto_complete_use_history": true,
+	"auto_complete_trailing_symbols": true,
+	"focus_on_file_drop": true,
+	"theme": "Adaptive.sublime-theme",
+	"highlight_modified_tabs": true,
+	// "hardware_acceleration": "opengl",
+	"remember_layout": true,
+	// "close_windows_when_empty": true,
+	"dark_color_scheme": "Mariana.sublime-color-scheme",
+	"auto_complete": true,
+	"show_definitions": false,
+	"auto_complete_use_index": true,
+	"font_options": [
+		// "subpixel_antialias",
+		// "gray_antialias",
+		"no_bold",
+	],
+	"show_full_path": false,
+	// "show_rel_path": true,
+	// "inactive_sheet_dimming": false,
+	"adaptive_dividers": true,
+	// "relative_line_numbers": true,
+	"ignored_packages": [
+		"Origami",
+		"Vintage",
+	],
+	"word_wrap": true,
+	"color_scheme": "Dark+.sublime-color-scheme",
+	"scroll_speed": 2.0,
+	"light_color_scheme": "Celeste.sublime-color-scheme",
+	"margin": 0,
+	"caret_style": "blink",
+	"default_encoding": "UTF-32",
+	"auto_hide_menu": true,
+	// "auto_hide_status_bar": true,
+	"reveal_menu": false,
+	"auto_find_in_selection": true,
+	"bold_folder_labels": true,
+	"hide_tab_scrolling_buttons": true,
+	"show_project_first": true,
+	"allow_git_home_dir": true,
+	"scroll_past_end": false,
+	/*"gn_hide_tab_dropdown": true,*/
+	/*"gn_overlay_scroll_bars": true,*/
+	/*"gn_sidebar_box": true,*/
+	/*"gn_title_bar": true,*/
+	/*"gnc_h09": true,*/
+	/*"gnc_m08": true,*/
+	/*"gnc_w5m11": true,*/
+	/*"gnwidg1": true,*/
+	/*"gnwidgo": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_h14": true,*/
+	/*"gnc_m02": true,*/
+	/*"gnc_w6m13": true,*/
+	/*"gnc_002": false,*/
+	/*"gnc_m03": true,*/
+	/*"gnc_m04": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_h19": true,*/
+	/*"gnc_m06": true,*/
+	/*"gnc_w6m12": true,*/
+	/*"gnc_m05": true,*/
+	/*"gnc_w0m15": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_h21": true,*/
+	/*"gnc_m09": true,*/
+	/*"gnc_w4m10": true,*/
+	/*"gni_001": true,*/
+	/*"gni_002": true,*/
+	/*"gni_003": false,*/
+	/*"gnc_h11": true,*/
+	/*"gnc_m08": true,*/
+	/*"gnc_w6m15": true,*/
+	/*"gni_001": false,*/
+	/*"gni_002": false,*/
+	/*"gni_003": false,*/
+	"gn_hide_tab_dropdown": true,
+	"gn_overlay_scroll_bars": true,
+	"gn_sidebar_box": true,
+	"gn_title_bar": true,
+	/*"gnc_h21": true,*/
+	/*"gnc_m03": true,*/
+	/*"gnc_w0m13": true,*/
+	"gnwidg1": true,
+	"gnwidgo": true,
+	/*"gnc_h12": true,*/
+	/*"gnc_m03": true,*/
+	/*"gnc_w6m14": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_h13": true,*/
+	/*"gnc_w6m15": true,*/
+	/*"gnc_001": true,*/
+	/*"gnc_h15": true,*/
+	/*"gnc_m09": true,*/
+	/*"gnc_w2m10": true,*/
+}

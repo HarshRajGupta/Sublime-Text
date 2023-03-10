@@ -1,0 +1,20 @@
+{
+    "selector": "source.c++",
+    "working_dir": "/Users/Harsh Raj Gupta/Documents/.cpp",
+    "shell_cmd": "g++.exe -std=c++17 \"${file}\" && a.exe < input > output 2> log",
+    "variants": [
+        {
+            "name": "Linux",
+            "working_dir": "/home/harsh/Documents/.cpp",
+            "shell_cmd": "g++ -std=c++17 \"${file}\" && a.out < input > output 2> log && rm a.out && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
+        },
+        {
+            "name": "Run + Commit",
+            "shell_cmd": "g++.exe -std=c++17 \"${file}\" && a.exe < input > output 2> log && rm a.exe && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
+        },
+        {
+            "name": "Run + Push",
+            "shell_cmd": "g++.exe -std=c++17 \"${file}\" && a.exe < input > output 2> log && rm a.exe && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\" && git push",
+        }
+    ]
+}

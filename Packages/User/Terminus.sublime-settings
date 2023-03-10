@@ -1,0 +1,46 @@
+{
+    "default_config": {
+        "linux": "Console",
+        "osx": "Console",
+        "windows": "Git Bash",
+    },
+    "shell_configs": [
+        {
+            "name": "Git Bash",
+            "cmd": [
+                "C:/Program Files/Git/bin/bash.exe"
+            ],
+            "platforms": [
+                "windows"
+            ],
+        },
+        {
+            "name": "Console",
+            "cmd": [
+                "fish"
+            ],
+            "env": {},
+            "enable": true,
+            "platforms": [
+                "linux",
+                "osx"
+            ],
+        },
+    ],
+    // "256color": true,
+    "min_columns": 60,
+    "max_columns": 172,
+    "debug": true,
+    "theme": "spring",
+    "scrollback_history_size": 1000000000,
+    "view_settings": {
+        "line_padding_top": 0,
+        "line_padding_bottom": 12,
+        "margin": 12,
+        "font_options": [
+            "subpixel_antialias",
+            "gray_antialias",
+        ],
+        "inactive_sheet_dimming": true,
+    },
+}
