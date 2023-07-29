@@ -16,5 +16,8 @@
             "focus": true,
             "title": "Terminal",
         }
+    }, { 
+        "keys": ["f2"], 
+        "command": "toggle_bookmark" 
     },
 ]

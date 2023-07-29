@@ -5,6 +5,8 @@ scope: source.yaml.yarn
 hidden: true
 file_extensions:
   - yarn.lock
+  - .yarnrc.yml
+  - .yarnrc.yaml
 contexts:
   main:
     - include: scope:source.yaml

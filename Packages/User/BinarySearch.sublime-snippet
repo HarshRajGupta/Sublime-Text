@@ -1,10 +1,15 @@
 <snippet>
-    <content><![CDATA[const int bS(const std::vector<int> &arr, const int &t, int l, int r) {
+    <content><![CDATA[const int bS(const vector<int> &arr, const int t, int l = 0, int r = -1) {
+    if (r == -1)
+        r = (arr.size() - 1);
     while (l <= r) {
-        const int mid = ((l + r) / 2);
-        if (arr[mid] == t) return mid;
-        else if (arr[mid] > t) r = (mid - 1);
-        else l = (mid + 1);
+        const int mid = (l + r) >> 1;
+        if (arr[mid] == t)
+            return mid;
+        else if (arr[mid] > t)
+            r = (mid - 1);
+        else
+            l = (mid + 1);
     }
     return ((arr[l] == t) ? l : ((arr[r] == t) ? r : -1));
 }]]></content>

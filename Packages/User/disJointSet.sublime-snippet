@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[struct disJointSet {
+    vector<int> parent;
+    disJointSet(int n): parent(vector<int>(n + 1)) {
+        iota(parent.begin(), parent.end(), 0);
+    }
+    const int find(const int x) {
+        if (parent[x] == x) return x;
+        return parent[x] = find(parent[x]);
+    }
+    const bool unionSet(int x, int y) {
+        x = find(x), y = find(y);
+        if (x == y) return false;
+        parent[x] = y;
+        return true;
+    }
+};]]></content>
+    <tabTrigger>disJointSet | find | union</tabTrigger>
+    <scope>( source.objc | source.c++ | source.cpp ) - meta.preprocessor.include - comment - string</scope>
+    <description>disJointSet</description>
+</snippet>

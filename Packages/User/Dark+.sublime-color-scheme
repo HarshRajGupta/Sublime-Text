@@ -1,61 +1,87 @@
 // Documentation at https://www.sublimetext.com/docs/color_schemes.html
 {
+    "name": "Dark+",
+    "author": "Harsh Raj Gupta",
     "variables":
     {
         "black": "hsl(0, 0%, 0%)",
-        "black2": "hsl(60, 17%, 11%)",
-        "black3": "hsl(70, 8%, 15%)",
-        "blue": "hsl(190, 81%, 67%)",
-        "grey": "hsla(55, 8%, 31%, 0.7)",
-        "orange": "hsl(32, 98%, 56%)",
-        "orange2": "hsl(30, 83%, 34%)",
-        "orange3": "hsl(47, 100%, 79%)",
-        "purple": "hsl(261, 100%, 75%)",
-        "red": "hsl(0, 93%, 59%)",
-        "red2": "hsl(338, 95%, 56%)",
-        "white": "hsl(0, 0%, 97%)",
+        "black2": "hsl(60, 17%, 10%)",
+        "black3": "hsl(70, 8%, 12%)",
+
+        "blue": "hsl(190, 81%, 60%)",
+        "blue2": "hsl(210, 13%, 35%)",
+        "blue-vibrant": "hsl(210, 60%, 50%)",
+
+        "green": "hsl(114, 31%, 68%)",
+        "lightGreen": "hsl(80, 76%, 50%)",
+
+        "grey": "hsla(55, 8%, 28%, 0.7)",
+
+        "orange": "hsl(32, 98%, 50%)",
+        "orange2": "hsl(30, 83%, 30%)",
+        "orange3": "hsl(47, 100%, 72%)",
+
+        "pink": "hsl(300, 69%, 65%)",
+        "purple": "hsl(261, 100%, 70%)",
+
+        "red": "hsl(0, 93%, 50%)",
+        "red2": "hsl(338, 95%, 50%)",
+
+        "white": "hsl(0, 0%, 100%)",
         "white2": "hsl(60, 36%, 96%)",
-        "white3": "#FFFFFF",
-        "yellow": "hsl(54, 70%, 68%)",
-        "yellow2": "hsl(80, 76%, 53%)",
-        "yellow3": "hsl(60, 12%, 79%)",
-        "yellow4": "hsl(55, 11%, 22%)",
         "white3": "rgb(187, 210, 255)",
-        "pink": "hsl(300, 69%, 69%)",
+        "white4": "hsl(200, 100%, 88%)",
+
+
+        "yellow": "hsl(54, 70%, 62%)",
+        "yellow2": "rgb(166, 172, 185)",
+        "yellow3": "hsl(60, 12%, 72%)",
+
+        "comments": "hsla(210, 13%, 35%, 0.69)",
+
         // "background": "rgb(16, 28, 42)",
         // "background": "rgb(16, 22, 28)",
-        // "background": "#161C23",
+        // "background": "rgb(26, 27, 25)",
+        
+        "background": "#161C23",
         // "background": "#212121",
         // "background": "#10141c",
-        "background": "rgb(26, 27, 25)",
-        // "background": "hsl(70, 8%, 15%)",
+        // "background": "#0d1117",
         // "background": "#041014",
-        "yellow5": "rgba(166, 172, 185, 0.3)", // comments
+        
+        // "background": "hsl(220, 69%, 6%)",
+        // "background": "hsl(90, 3.8%, 10.3%)",
+        // "background": "hsl(70, 8%, 15%)",
+
+         
         "selection": "rgba(125, 150, 175, 0.1)",
         "operator": "rgb(95.5, 180, 180)",
         "brackets" : "rgb(91.8, 153, 214)",
     },
     "globals":
     {
-        "foreground": "var(white3)",
-        "block_caret": "color(var(white2) alpha(0.2))",
-        "block_caret_border": "color(var(white2) alpha(0.8))",
-        "invisibles": "color(var(white3) alpha(0.35))",
-        "selection_border": "var(black2)",
+        "foreground": "var(white4)",
+        "background": "var(background)",
+        "accent": "var(black)",
+        "caret": "color(var(orange) alpha(0.9))",
+        "line_highlight": "var(selection)",
+        "selection": "var(selection)",
+        "selection_border": "color(var(orange) alpha(0.69))",
+        "inactive_selection": "color(var(blue-vibrant) alpha(0.1))",
         "misspelling": "var(red2)",
+        "shadow": "color(var(black) alpha(0.25))",
         "active_guide": "color(var(orange2) alpha(0.69))",
+        "stack_guide": "color(var(blue2) alpha(0.5))",
+        "highlight": "var(orange)",
         "find_highlight_foreground": "var(black)",
         "find_highlight": "var(orange3)",
-        "brackets_options": "underline",
-        "brackets_foreground": "color(var(white3) alpha(0.65))",
-        "bracket_contents_foreground": "color(var(white3) alpha(0.65))",
-        "tags_options": "stippled_underline",
-        "background": "var(background)",
-        "caret": "color(var(orange) alpha(0.9))",
+        "brackets_options": "italic",
         "brackets_foreground": "var(blue)",
-        "bracket_contents_options": "underline",
-        "selection": "var(selection)",
-        "line_highlight": "var(selection)",
+        "bracket_contents_options": "italic",
+        "bracket_contents_foreground": "var(blue)",
+        "tags_options": "stippled_underline",
+        "invisibles": "color(var(white3) alpha(0.35))",
+        "tags_foreground": "var(pink)"
     },
     "rules":
     [
@@ -64,75 +90,64 @@
             "scope": "meta.function-call",
             "foreground": "var(orange)",
             // "font_style": "italic"
-        },
-        {
+        }, {
             "name": "Operators",
             "scope": "keyword.operator",
             "foreground": "var(operator)",
-            "font_style": "italic",
+            // "font_style": "italic",
             // "font_style": "bold"
-        },
-        {
+        }, {
             "name": "Punctuation",
             "scope": "punctuation.separator, punctuation.terminator",
             "foreground": "var(operator)",
             // "font_style": "italic"
-        },
-        {
+        }, {
             "name": "Keyword",
             "scope": "keyword",
             "foreground": "var(pink)",
-            "font_style": "italic"
-        },
-        {
+            // "font_style": "italic"
+        }, {
             "name": "Number",
             "scope": "constant.numeric",
             "foreground": "var(red2)",
-            "font_style": "italic"
-        },
-        {
+            // "font_style": "italic"
+        }, {
             "name": "Punctuation",
             "scope": "punctuation.section",
             "foreground": "var(brackets)",
-            "font_style": "italic"
-        },
-        {
+            // "font_style": "italic"
+        }, {
             "name": "Comment",
             "scope": "comment",
-            "foreground": "var(yellow5)"
-        },
-        {
+            "foreground": "var(comments)"
+        }, {
             "name": "String",
             "scope": "string",
-            "foreground": "var(yellow)"
-        },
-        {
+            "foreground": "var(green)"
+        }, {
             "name": "Number suffix",
             "scope": "storage.type.numeric",
             "foreground": "var(blue)",
             "font_style": "italic"
-        },
-        {
+        }, {
             "name": "Built-in constant",
             "scope": "constant.language",
-            "foreground": "var(purple)",
+            "foreground": "var(red2)",
             "font_style": "italic"
-        },
-        {
+        }, {
             "name": "User-defined constant",
             "scope": "constant.character, constant.other",
-            "foreground": "var(purple)",
+            "foreground": "var(red2)",
             "font_style": "italic"
-        },
-        {
+        }, {
             "name": "Variable",
             "scope": "variable"
-        },
-        {
+        }, {
             "name": "Annotation Punctuation",
             "scope": "punctuation.definition.annotation",
             "foreground": "var(red2)"
         },
+
         {
             "name": "JavaScript Dollar",
             "scope": "variable.other.dollar.only.js",
@@ -152,12 +167,12 @@
         {
             "name": "Entity name",
             "scope": "entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label)",
-            "foreground": "var(yellow2)"
+            "foreground": "var(lightGreen)"
         },
         {
             "name": "Inherited class",
             "scope": "entity.other.inherited-class",
-            "foreground": "var(yellow2)",
+            "foreground": "var(lightGreen)",
             "font_style": "italic"
         },
         {
@@ -180,7 +195,7 @@
         {
             "name": "Tag attribute",
             "scope": "entity.other.attribute-name",
-            "foreground": "var(yellow2)"
+            "foreground": "var(lightGreen)"
         },
         {
             "name": "Library function",
@@ -227,7 +242,7 @@
         {
             "name": "diff.header",
             "scope": "meta.diff, meta.diff.header",
-            "foreground": "var(yellow5)"
+            "foreground": "var(yellow2)"
         },
         {
             "name": "markup headings",
@@ -287,12 +302,12 @@
         {
             "name": "markup hr",
             "scope": "punctuation.definition.thematic-break",
-            "foreground": "var(yellow5)"
+            "foreground": "var(yellow2)"
         },
         {
             "name": "markup blockquote",
             "scope": "markup.quote punctuation.definition.blockquote",
-            "foreground": "var(yellow5)"
+            "foreground": "var(yellow2)"
         },
         {
             "name": "markup bullets",
@@ -328,7 +343,7 @@
         {
             "name": "diff.inserted",
             "scope": "markup.inserted",
-            "foreground": "var(yellow2)"
+            "foreground": "var(lightGreen)"
         },
         {
             "name": "diff.changed",
@@ -347,25 +362,39 @@
             "scope": "message.error",
             "foreground": "var(red)"
         },
+
         {
-            "scope": "diff.deleted",
-            "background": "hsla(338, 50%, 56%, 0.15)",
-            "foreground_adjust": "l(+ 5%)"
-        },
-        {
-            "scope": "diff.deleted.char",
-            "background": "hsla(338, 65%, 56%, 0.30)",
-            "foreground_adjust": "l(+ 10%)"
-        },
-        {
-            "scope": "diff.inserted",
-            "background": "hsla(80, 50%, 53%, 0.15)",
-            "foreground_adjust": "l(+ 5%)"
-        },
-        {
-            "scope": "diff.inserted.char",
-            "background": "hsla(80, 65%, 53%, 0.30)",
-            "foreground_adjust": "l(+ 10%)"
-        },
+            "scope": "comments.important",
+            "foreground": "var(red)",
+            "background": "color(var(white) alpha(0.002))"
+        }, {
+            "scope": "comments.question",
+            "foreground": "var(blue)",
+            "background": "color(var(white) alpha(0.002))"
+        }, {
+            "scope": "comments.star",
+            "foreground": "var(lightGreen)",
+            "background": "color(var(white) alpha(0.002))",
+        }, {
+            "scope": "comments.todo",
+            "foreground": "var(orange)",
+            "background": "color(var(white) alpha(0.002))"
+        }, {
+            "scope": "comments.fixme",
+            "foreground": "var(yellow)",
+            "background": "color(var(white) alpha(0.002))"
+        }, {
+            "scope": "comments.mark",
+            "foreground": "color(var(white4) alpha(0.69))",
+            "background": "color(var(black) alpha(0.069))",
+        }, {
+            "scope": "comments.undefined",
+            "foreground": "color(var(white4) alpha(0.069))",
+            "background": "color(var(black) alpha(0.069))",
+        }, {
+            "scope": "comments.note",
+            "foreground": "var(purple)",
+            "background": "color(var(black) alpha(0.069))",
+        }
     ]
 }

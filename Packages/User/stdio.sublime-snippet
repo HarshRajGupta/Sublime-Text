@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[#include <bits/stdc++.h>
+using namespace std;
+
+signed main(void) {
+    ${1:/* Code */}
+    return 0;
+}]]></content>
+    <tabTrigger>stdio</tabTrigger>
+    <scope>( source.objc | source.c++ | source.cpp ) - meta.preprocessor.include - comment - string</scope>
+    <description>#include &lt;stdio&gt;</description>
+</snippet>

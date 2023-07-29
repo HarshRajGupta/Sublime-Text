@@ -1,4 +1,11 @@
 // These settings override both User and Default settings for the Plain text syntax
 {
-    
+    "auto_complete": false,
+    "font_face": "Comic Sans MS",
+    // "font_face": "noto sans",
+    // "font_face": "Hello_Graduation_Sans",
+    "font_options": [
+        "no_bold",
+        "no_italic"
+    ],
 }

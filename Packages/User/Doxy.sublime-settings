@@ -1,0 +1,1756 @@
+{
+    // Change the way snippets are generated.
+    //
+    // Possibles values are:
+    //     - ``default``:         current preferred (may be one of the following values)
+    //     - ``pedagogic``:       optional arguments generate a tab stop
+    //     - ``remove_optional``: assumed optional is not optional
+    "completion_snippet_format": "default",
+
+    // If true, pressing on |Enter| on the last comment line of multi-lines comments
+    // inserts a new comment line. To break this sequence, you have to press
+    // |Shift+Enter| or |Down|.
+    "continuation_on_last_multilines_comment": true,
+
+    // If true, pressing on |Enter| on the end of a single line comment
+    // inserts a new comment line. To break this sequence, you have to press
+    // |Shift+Enter| or |Down|.
+    "continuation_on_singleline_comment": false,
+
+    // The ``DoxyCommentNearestEntity`` command uses this value to locate the "nearest" function.
+    // If the value is 3, the plug-in prefers go up to 2*3-1=5 lines up, instead of
+    // 2 lines down.
+    "distance_for_bottom_line_over_top_line": 3,
+
+    // Preferred command prefix (``@`` is more common and shouldn't be change,
+    // but can be ``\\`` if you use QT Doc).
+    "doxygen_command_prefix": "@",
+
+    // Doxygen allows to specify parameters directions (in, out).
+    // Sets this parameter to ``true`` to discard this information.
+    "doxygen_discard_param_directions": false,
+
+    // Prefix before a paragraph.
+    //
+    // Examples:
+    //     - ``"\t"``:     move to next column
+    //     - ``"\n"``:     move to a new line
+    //     - ``"\n    "``: move to a new line with an indentation
+    //     - ``" "``:      add a space
+    //
+    // Currently unaffected commands: ``@par``, ``@todo``, ``@xrefitem``
+    "doxygen_paragraph_prefix": "\t",
+
+    // Path to the Doxygen command.
+    //
+    // Rules:
+    //     - Can be absolute or relative
+    //     - If path is relative, the plugin will look for the module in PATH
+    //     - On Windows machines, the ``.exe`` suffix will be added if missing
+    "doxygen_cmd": "doxygen",
+
+    // List of C, C++ macros to expand
+    //
+    // .. warning::
+    //
+    //     EXPERIMENTAL. Macros with parameters are partially supported (no "...", no "#", no "##", no comment...)
+    //
+    "c_macros": [
+        //"ThrowException(ClassName)=throw ClassName()",
+        //"DllExport=",
+        //"DLLEXPORT=",
+        //"UNUSED(x)=x",
+        //"boost::ignore_unused(x)=",
+        "UCLASS()=",        // Unreal
+        "UFUNCTION()=",
+        "UPROPERTY(specifier, meta)=",
+        "UENUM(meta)=",
+        "KDE_EXPORT=",      // KDE
+        "KDE_IMPORT=",
+        "KDE_NO_EXPORT=",
+        "KDE_BF_ENUM(a)=a",
+        "KDE_CAST_BF_ENUM(a, b)=b",
+        "KDE_CONSTRUCTOR_DEPRECATED=",
+        "K_GLOBAL_STATIC(TYPE, NAME)=",
+        "K_GLOBAL_STATIC_WITH_ARGS(TYPE, NAME, ARGS)=",
+        "Q_INVOKABLE=",     // QT
+        //"Q_UNREACHABLE()="
+        //"Q_ASSERT(test)="
+        //"Q_ASSERT_X(test, where, what)="
+        //"Q_ASSUME(expr)="
+        //"Q_GLOBAL_STATIC(type, variable_name)=",
+        //"Q_GLOBAL_STATIC_WITH_ARGS(type, variablename, arguments)=",
+        "AFX_EXT_CLASS="    // MFC
+    ],
+
+    // Same as ``doxygen_paragraph_prefix`` for JsDoc (for example, Drupal uses ``"\n  "``).
+    "jsdoc_paragraph_prefix": "\t",
+
+    // Same as ``doxygen_paragraph_prefix`` for JsDoc (for example, Drupal uses ``"\n  "``).
+    "phpdoc_paragraph_prefix": "\t",
+
+    // If true, the primitives "boolean" and "integer" are shortened to "bool" and "int"
+    //
+    // Some tools, like PHP CODE SNIFFER, may require this option to work.
+    "phpdoc_short_primitives": true,
+
+    // Replace relative name with fully qualified name.
+    //
+    // More details can be found in the `GitHub request <https://github.com/20Tauri/DoxyDoxygen/issues/29>`_.
+    "php_generate_fully_qualified_name": true,
+
+    // Python annotation may be everything.
+    // Set this parameters to ``true`` to allow to use those values as parameter types.
+    "python_func_annotations_are_types": true,
+
+    // If true, ``template <typename T1> void Bar(T1 x);`` will not generate a
+    // ``@tparam`` entry as ``T1`` appear as type in parameters list.
+    "remove_template_used_as_type": true,
+
+    // Behavior for ``@brief``: remove / preserve existing one.
+    "brief_mode": "preserve",
+
+    // Maximum indentation within a comment.
+    //
+    // .. note::
+    //
+    //     This setting does NOT affect list items
+    //
+    // .. code-block:: none
+    //     :caption: Example with the value '2'
+    //
+    //      /**
+    //      * Find players in the game.
+    //      *
+    //      * @param string $filter Name of the filter. 'registered' to return only
+    //      *   registered players. Leave empty to return all players.
+    //      * ^
+    //      * +----- indentation is 2 spaces here
+    //      */
+    //
+    // .. code-block:: none
+    //     :caption: Example with the value '9999999' (or any number greater than 22)
+    //
+    //      /**
+    //      * @param string $filter Name of the filter. 'registered' theo return only
+    //      *                       registered players. Leave empty to return all
+    //      *                       players.
+    //      * ^
+    //      * +----- indentation is 22 spaces here
+    //      */
+    "indentation_max": 99999999,
+
+    // Minimum spaces between columns.
+    //
+    // .. warning::
+    //
+    //     The value CANNOT be an empty list.
+    //
+    // Rules:
+    //     - First number  is for first column
+    //     - Second number is for second column
+    //     - ...
+    //     - Last number is applied to all next columns
+    //
+    // .. code-block:: none
+    //     :caption: Example with the value '[1, 2]'
+    //
+    //                  +-- At least 1 space here (but according ``preferred_tabs_sizes`` it's more)
+    //     /**          V    V--- At least 2 spaces here
+    //      * @param[in]  foo       Lorem ipsum dolor sit amet.
+    //      * @param[out] long_bar  Nullam fringilla feugiat pretium. Quisque
+    //      */
+    "min_spaces_between_columns": [ 1, 2 ],
+
+    // Default tabs size in documentation block (last value is repeated if needed).
+    // You can use [ 0 ] to treat tabs as spaces (and disable alignment).
+    //
+    // .. warning::
+    //
+    //     The value CANNOT be an empty list.
+    //
+    // .. code-block:: none
+    //     :caption: Example with the value '[ 13, 6, 8, 8, 8, 8 ]'
+    //
+    //     /**
+    //      * @param[in]  a     { parameter_description }
+    //      * 123456789012      12345678...and continue because there is no more tab
+    //      *             123456
+    //      */
+    "preferred_tabs_sizes": [ 4, 12, 6, 8, 8, 8, 8 ],
+
+    // Way that tabs size are computed.
+    //
+    // Possibles values:
+    //     - "comment" to align tabs in the whole comment
+    //     - "section" to align tabs in each group of command separated with a blank line separately (added in version 0.61.0)
+    //
+    // See `How to set max space <https://github.com/20Tauri/DoxyDoxygen/issues/87>`_
+    "group_tabs_sizes_by": "comment",
+
+    // DoxyDoxygen parameter to set the preferred line length (line will be
+    // wrapped if there are greater than this limit)
+    //
+    // If not set or "auto", the value used is the first value of the SublimeText
+    // ``rulers`` parameter (default: 80 if empty).
+    //
+    "preferred_line_length": "auto",
+
+    // Maximum number of characters that a line may be reduced to respect the rulers.
+    "max_line_reducing": 12,
+
+    // Matching ratio to consider two keys similar.
+    //
+    // It's a value from 0 to 1:
+    //     - 1   is exact match,
+    //     - 0.6 is close match.
+    //
+    // For example:
+    //
+    // .. code-block:: c
+    //
+    //    /** @param  misstake  Name in comment has two 'ss'
+    //     */
+    //    void function(int mistake);
+    //
+    // With ``merge_matching_ratio`` set to 0.6, on update, as ``misstake`` similar
+    // to ``mistake``, the comment will directly become:
+    //
+    // .. code-block:: c
+    //
+    //    /* @param  mistake    Name in comment has two 'ss'
+    //     */
+    //    void function(int mistake);
+    "merge_matching_ratio": 0.6,
+
+    // If false, replace aliases with the main command.
+    "preserve_aliases": true,
+
+    // List of possible styles for comments (first match is better).
+    "preferred_comments_styles": [
+        [
+            "/**",
+            " *",
+            " */"
+        ],
+        [
+            "// *"
+        ],
+        [
+            "/*", " *", "*/"
+        ],
+        [
+            ["/*", "-", "*//**"],   // <=> /*-------------------*//**
+            " *",
+        ],
+        [
+            ["//", "-"],            // <=> //------------------------
+            "///"
+        ],
+        // [
+        //     [ "//", "/", "" ],
+        //     [ "//", "/", " ", " ", "/", "//" ],
+        //     [ "", "/", "//" ]
+        // ],
+        [
+            "\"\"\"",            // Python docString (comment it if you prefer regular comments)
+            "",
+            "\"\"\""
+        ],
+        [
+            "##",
+            "##"
+        ],
+        [
+            ["#", "-"],             // <=> #-------------------------
+            "##"
+        ]
+    ],
+
+    // Positioning of the commands that can be present in the documentation block.
+    //
+    // See ``block_layout`` for further informations on format.
+    //
+    // .. warning::
+    //
+    //     SHOULD NOT BE OVERLOAD BY USER (use ``block_layout`` instead)
+    "block_layout_default": {
+        "ApiDoc": [
+            "",
+            "@api",
+            "@apiName",
+            "@apiGroup",
+            "",
+            "@apiDescription",
+            "",
+            "@apiParam",
+            "",
+            "@apiSuccess",
+            ""
+        ],
+
+        "AsDoc": [
+            "",
+            "@_brief",
+            "",
+            "@param",
+            "",
+            "@return",
+            //"",
+            //"@throws",
+            ""
+        ],
+
+        "DoxyDoc": [
+            "",
+            "@_brief",
+            "",
+            "@var",
+            //"@method",
+            //"",
+            "@param",
+            //"",
+            "@return",
+            ""
+        ],
+
+        "Solidity": [
+            {
+                "tags": [
+                    "",
+                    "@title",
+                    ""
+                ],
+                "context": [
+                    { "key": "kind",                                             "operator": "regex_match",  "operand": "^(?:class)$" }
+                ]
+            },
+            {
+                "tags": [
+                    "",
+                    "@dev",
+                    "@param",
+                    "@return",
+                    ""
+                ]
+            }
+        ],
+
+        "Doxygen": [
+            // Auto-filled description for file header
+            {
+                "tags": [
+                    "@defgroup         {file_base_name:doxy_upper();} {file_base_name:doxy_words();}",
+                    "",
+                    "@brief            This file implements {file_base_name:doxy_words();}.",
+                    "",
+                    "@author           {user_name:doxy_capitalize();}",
+                    "@date             {now:%Y}",
+                    ""
+                ],
+                "context": [
+                    { "key": "row",      "operator": "equal",          "operand": "0" },
+                    { "key": "kind",     "operator": "equal",          "operand": "" }
+                ]
+            },
+            {
+                "tags": [
+                    "@_brief"
+                ],
+                "context": [
+                    { "key": "kind",                                             "operator": "regex_match",  "operand": "^(?:var|constant)$" },
+                    { "key": "language",                                         "operator": "regex_match",  "operand": "^(?:json)$" }
+                ]
+            },
+            {
+                "tags": [
+                    "",
+                    // QT Doc Style ("\\") may replace "@" but it's NOT necessary
+
+                    // "@addtogroup",                           // GROUP_NAME may be auto-filled (search GROUP_NAME in this file)
+                    // "@memberof {file_base_name}",
+                    // "@copyright 2014-{now:%Y} {user_name}",  // fixed date from "current"
+                    // "@author {user_name}",                   // fixed author name
+                    // "@author",                               // author name have to be entered manually
+                    // "@author {user_name:doxy_capitalize();.1}. {user_name:doxy_chars(1,);doxy_capitalize();}",
+                    // "@date {now:%Y-%m-%dT%H:%M:%S%z}",       // iso format (see https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior)
+                    // "@date {now:%d-%b-%Y}",                  // dd-mon-YYYY format
+                    "@brief",  // or "@_brief" if you prefer have no explicit @brief (auto-brief approach)
+                    "",
+                    // "@details",
+                    // "",
+                    "@param",
+                    "",
+                    "@tparam",
+                    "",
+                    "@return",
+                    //"",
+                    //"@throws",
+                    //"",
+                    //"@remark Complexity",
+                    ""
+                ],
+                "context": [
+                    { "key": "kind",                                             "operator": "not_equal",  "operand": "" }
+                ]
+            }
+        ],
+
+        "GoogleClosure": [
+            "",
+            "@_brief",
+            "",
+            "@type",
+            "",
+            "@param",
+            "",
+            "@return",
+            ""
+        ],
+
+        "Drupal": [
+            "",
+            "@_brief",
+            "",
+            "@var",
+            "@param",
+            "",
+            "@return",
+            ""
+        ],
+
+        // HeaderDoc require to install a DoxyDoxygen_contrib_HeaderDoc
+        "HeaderDoc": [
+            "",
+            "@_brief",
+            "",
+            "@var",
+            "@const",
+            "",
+            "@param",
+            "",
+            "@return",
+            ""
+        ],
+
+        // NaturalDocs users may use this format (http://www.naturaldocs.org/languages.html)
+        "JavaDoc": [
+            "",
+            // JavaDoc require the following order
+            "@_brief",
+            //"@author",
+            //"",
+            //"@version",
+            "",
+            "@param",
+            "",
+            "@return",
+            "",
+            "@throws",
+            ""
+            //"@see",
+            //"@since",
+            //"@serial",
+            //"@deprecated",
+        ],
+
+        // Documentation.js, EsDoc2 uses the same/similars tags
+        "JsDoc": [
+            {
+                "type": [
+                    "{return:doxy_type_to_description();doxy_The();}."
+                ],
+                "tags": [
+                    "",
+                    "@_brief",
+                    "",
+                    "@type",
+                    ""
+                ],
+                "context": [
+                    { "key": "kind",                                             "operator": "equal",  "operand": "property" }
+                ]
+            },
+            {
+                "tags": [
+                    "",
+                    "@_brief",
+                    "",
+                    "@type",
+                    "@class",
+                    //"@method",
+                    //"",
+                    "@param",
+                    //"",
+                    "@return",
+                    ""
+                ],
+                "context": [
+                    { "key": "kind",                                             "operator": "not_equal",  "operand": "" }
+                ]
+            }
+        ],
+
+        "PhpDoc": [
+            // Auto-filled description for file header
+            {
+                "tags": [
+                    "This file implements {file_base_name:doxy_words();}.",
+                    "",
+                    "@author           {user_name:doxy_capitalize();}",
+                    "@since            {now:%Y}",
+                    ""
+                ],
+                "context": [
+                    { "key": "row",      "operator": "lower_than",     "operand": "2" },
+                    { "key": "kind",     "operator": "equal",          "operand": "" }
+                ]
+            },
+            {
+                "tags": [
+                    "",
+                    "@_brief",
+                    "",
+                    "@var",
+                    "",
+                    "@param",
+                    "",
+                    "@throws",
+                    "",
+                    "@return",
+                    ""
+                ],
+                "context": [
+                    { "key": "kind",                                             "operator": "not_equal",  "operand": "" }
+                ]
+            }
+        ],
+
+        "SassDoc": [
+            "",
+            "@_brief",
+            "",
+            "@type",
+            "",
+            "@param",
+            "",
+            "@return",
+            // "",
+            // "@throws",
+            ""
+        ],
+
+        "Sphinx": [
+            "",
+            "@_brief",
+            "",
+            [ ":param", ":type" ],
+            "",
+            ":returns:",
+            ":rtype:",
+            "",
+            ":exception",
+            ""
+        ],
+
+        "XmlDoc": [
+            "<summary>",
+            "",
+            "<paramref",
+            "<param",
+            "",
+            "<returns>",
+            "",
+            "<exception"
+        ],
+
+        "YuiDoc": [
+            "",
+            "@_brief",
+            "",
+            "@type",
+            "@class",
+            "@method",
+            "@param",
+            "@return",
+            ""
+        ]
+    },
+
+    // Used to overload ``block_layout_default`` values.
+    //
+    // .. warning::
+    //
+    //     The section defines commands positioning (and optionally default value).
+    //     Do NOT try to use it to format command.
+    //
+    // Values can be either:
+    //     - an array of tags for rigid layout
+    //     - an array of dictionaries for context dependent layout
+    //
+    // If value is an array of tags (strings):
+    //     - Tags may be command or blank lines.
+    //     - Doxygen like commands must be prefixed with ``@`` or ``\``
+    //     - Commands arguments are in `the python format() style <https://docs.python.org/3/library/string.html#formatspec>`_
+    //     - In addition of standard format specifiers, some have been added:
+    //         - ``doxy_words(start[, end[, step]);`` (work as python arrays [start:end:step])
+    //         - ``doxy_chars(start[, end[, step]);`` (work as python arrays [start:end:step])
+    //         - ``doxy_capitalize();``
+    //         - ``doxy_upper();``
+    //         - ``doxy_lower();``
+    //         - ``doxy_a();``          (add `a` or `an` before the word)
+    //         - ``doxy_A();``          (add `A` or `An` before the word)
+    //         - ``doxy_the();``        (add `the` before the word)
+    //         - ``doxy_The();``        (add `The` before the word)
+    //         - ``doxy_plural();``
+    //         - ``doxy_conjugate();``
+    //         - ``doxy_ed();``         (get the past participle of an infinitive verb)
+    //         - ``doxy_undecorate();`` (remove prefix: Hungarian notation)
+    //         - ``doxy_operator_name();`` (translate operator symbol to English words)
+    //     - Commands arguments may include:
+    //         - documented item information: ``name``, ``kind``, ``nb_params``, ``nb_tparams``...
+    //         - data information: ``now`` or ``utc_now`` (see example below)
+    //         - path information: ``file_base_name``, ``file_full_name``, ``file_name``, ``file_path``
+    //         - project information: ``project_base_name``, ``project_full_name``, ``project_name``, ``project_path``
+    //         - context information: ``user_name``, ``host_name``, ``language``
+    //     - Special command ``@_brief`` may be used to ask for item description without prefix
+    //
+    // If value is a dictionary, it should have 2 keys:
+    //     - ``tags``: same format as if it's an array of strings
+    //     - ``context``: similar to `sublime text "context" format <http://docs.sublimetext.info/en/latest/reference/key_bindings.html#context-reference>`_
+    //
+    // Each ``context`` is a list of conditions. Each condition is composed of
+    //     - ``key``: Name of the context whose value you want to query.
+    //     - ``operator``: Type of test to perform against ``key``'s value.
+    //
+    // Possibles values for ``key``:
+    //     - ``name``: Name of the entity to document
+    //     - ``kind``: Kind of the entity to document
+    //         - ``function``, ``lambda``, ``generator``, ``constructor``, ``destructor``,
+    //         - ``class``, ``struct``, ``union``, ``enum``,
+    //         - ``var``, ``constant``
+    //     - ``nb_params``: Number of parameters (destructing params group "{ first, second }" count as a single parameter)
+    //     - ``nb_tparams``: Number of template parameters
+    //     - ``paramX``: The name of the Xth parameter (``param1`` for the first one)
+    //     - ``row``: Cursor row
+    //     - ``col``: Cursor column
+    //
+    // Possibles values for ``operator`` (Defaults to ``equal``):
+    //     - ``equal``
+    //     - ``not_equal``
+    //     - ``regex_match``: Match against a regular expression (full match).
+    //     - ``not_regex_match``
+    //     - ``regex_contains``: Match against a regular expression (partial match).
+    //     - ``not_regex_contains``
+    //     - ``greater_than``
+    //     - ``lower_than``
+    "block_layout": {
+    //     "Doxygen": [
+    //         // Auto-Filled description for a class
+    //         {
+    //             "tags": [
+    //                 "@brief            I'm the {name} class."
+    //             ],
+    //             "context": [
+    //                 { "key": "kind",      "operator": "equal",          "operand": "class" }
+    //             ]
+    //         },
+    //
+    //         // Auto-filled description for file footer
+    //         {
+    //             "tags": [
+    //                 "@brief            File footer",
+    //                 ""
+    //             ],
+    //             "context": [
+    //                 { "key": "row",      "operator": "equal",          "operand": "-1" },
+    //                 { "key": "kind",     "operator": "equal",          "operand": "" }
+    //             ]
+    //         },
+    //
+    //         // Auto-filled description for getters
+    //         {
+    //             "tags": [
+    //                 "@brief            Gets {name:doxy_words(1,);doxy_lower();}.",
+    //                 "@return           {name:doxy_words(1,);doxy_capitalize();}"
+    //             ],
+    //             "context": [
+    //                 { "key": "{name:doxy_words(0);doxy_lower();}",      "operator": "equal",          "operand": "get" }
+    //             ]
+    //         },
+    //
+    //         // Auto-filled description item starting with '_'
+    //         {
+    //             "tags": [
+    //                 "@brief            I'm a private item."
+    //             ],
+    //             "context": [
+    //                 { "key": "name",      "operator": "regex_match",    "operand": "^_.*$" },   // re.match(operand, key)
+    //             ]
+    //         },
+    //
+    //         // Compact style if there's less than one parameter
+    //         {
+    //             "tags": [
+    //                 "@brief",
+    //                 "@param",
+    //                 "@tparam",
+    //                 "@return",
+    //                 ""
+    //             ],
+    //             "context": [
+    //                 { "key": "nb_params", "operator": "lower_than",     "operand": "2" }
+    //             ]
+    //         }
+    //     ],
+    //
+    //     "PhpDoc": [
+    //     ]
+    },
+
+    // Defines for each protocol a proxy settings.
+    //
+    // If the dictionary is empty, system defaults are used.
+    //
+    // Possibles values:
+    //    - ``<package_control>`` uses package control settings
+    //    - ``joe:password@proxy.example.com:3128`` define specific proxy
+    "proxies": {
+        "http": "<package_control>",
+        "https": "<package_control>"
+    },
+
+    // The list of translation services (first is preferred).
+    "translators": [
+        // Google
+        // ------
+        //
+        //     - Used by default
+        {
+            "provider":     "google",
+            "api_key":      ""
+        }
+
+        // Bing
+        // ----
+        //
+        //     - `Require an Azure account with Pay card <https://docs.microsoft.com/en-us/azure/cognitive-services/translator/>`_
+        //     - Free plan is only up to 2_000_000 characters per month (and 12 months max)
+        //     - 60+ languages supported
+        //     - Implementation have changed and is untested (previous service has been closed since may 2017)
+        // {
+        //     "provider":     "bing",
+        //     "client_secret":""
+        // }
+
+        // SDL Language Cloud
+        // ------------------
+        //
+        //     - `Require a SDL account <https://languagecloud.sdl.com/translation-toolkit/login?role=developer>`_
+        //     - For Machine Translation you can use up to 500,000 characters per month in Sandbox for free.
+        // {
+        //     "provider":     "sdl",
+        //     "api_key":      ""
+        // }
+
+        // Frengly
+        // -------
+        //
+        //     - `Require a Frengly account <http://www.frengly.com/#!/api>`_
+        // {
+        //     "provider":     "frengly",
+        //     "email":        "",
+        //     "password":     ""
+        // }
+
+        // Yandex
+        // ------
+        //
+        //     - `Require a Yandex account <https://tech.yandex.com/translate/>`_
+        // {
+        //     "provider":     "yandex",
+        //     "key":          "",
+        //     "user":         "",
+        //     "pass":         ""
+        // }
+
+        // MyMemories
+        // ----------
+        //
+        //     - `Limited count of free translations per day without key (1000-10000 words/day) <https://mymemory.translated.net/doc/usagelimits.php>`_
+        //     - ``email`` is optional, 10000 words/days if email provided
+        //     - ``user`` is optional
+        //
+        // .. warning::
+        //
+        //     Contrary to MyMemories statements, ``email`` and ``user`` seem to have no effect on translation limitation
+        // {
+        //     "provider":     "mymemories",
+        //     "email":        "",
+        //     "user":         "",
+        //     "pass":         ""
+        // }
+
+        // Baidu
+        // -----
+        //
+        //     - `Require a Baidu account <http://developer.baidu.com/wiki/index.php?title=%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3%E9%A6%96%E9%A1%B5/%E7%99%BE%E5%BA%A6%E7%BF%BB%E8%AF%91/%E7%BF%BB%E8%AF%91API>`_
+        // {
+        //     "provider":     "baidu",
+        //     "app_id":       "",
+        //     "secret_key":   ""
+        // }
+
+        // Youdao
+        // ------
+        //
+        //     - Web interface and `Youdao account supported <http://fanyi.youdao.com/openapi?path=data-mode>`_
+        //     - 1000 requests per hour. `If you need more, please contact Youdao <translate-service@corp.youdao.com>`_
+        // {
+        //     "provider":     "youdao",
+        //     "key_from":     "",
+        //     "secret_key":   ""
+        // }
+
+        // Hablaa
+        // ------
+        //
+        //     - Currently word by word but large languages support.
+        // {
+        //     "provider":     "hablaa"
+        // }
+
+        // LiguaSys
+        // --------
+        //
+        //     - Require a LinguaSys account, 3 steps:
+        //         - `Register <https://nlp.linguasys.com/signin?ReturnUrl=%2Fdeveloper>`_
+        //         - Check your email
+        //         - `Choose your product <https://nlp.linguasys.com/products>`_
+        //     - Limited free translations (up to 20 API calls a minute, and up to 500 calls a month).
+        // {
+        //     "provider":     "linguasys",
+        //     "secret_key":   ""
+        // }
+
+        // Lindat
+        // ------
+        //
+        //     - Czech <-> English only.
+        //     - Fast and seem reliable.
+        // {
+        //     "provider":     "lindat"
+        // }
+    ],
+
+    // The list of languages that can be present in your source (or ``auto``)
+    //
+    // If the list is not empty and not the target language, a conversion may
+    // be perform (this can slow down update)
+    //
+    // Examples:
+    //     - ``auto``          Auto-detection
+    //     - ``[]``            Disable translation of non-generated text
+    //     - ``["de", "fr"]``  German or French (currently same as ``auto``)
+    "source_languages": [],
+
+    // Preferred language in generated comments (also used as default translation target).
+    //
+    // The format is based on ISO_639-1 format with Google extension.
+    //
+    // Examples:
+    //    - ``ar``    Arabic
+    //    - ``de``    German
+    //    - ``es``    Spanish
+    //    - ``fr``    French
+    //    - ``it``    Italian
+    //    - ``pt``    Portuguese
+    //    - ``ru``    Russian
+    //    - ``zh-CN`` Chinese (simplified)
+    //    - ``zh-TW`` Chinese (traditional)
+    //    - ``hmn``   Hmong
+    //    - ``ceb``   Cebuano
+    "target_language": "en",
+
+    // DoxyDoxygen can automatic fill some descriptions.
+    // Here the default rules used to do it.
+    //
+    // To disallow auto-fill, you may override it with an empty array.
+    "autofill_rules_default": [
+        // This example use the parent directory as GROUP_NAME
+        //
+        // This rules is probably not the best, may change or be removed in future (your feedbacks are welcome)
+        {
+            "GROUP_NAME": [
+                "GROUP_{file_path:doxy_words(-1,);doxy_upper();}"
+            ],
+            "context": [
+                { "key": "{file_path:doxy_words(-1,);doxy_upper();}",       "operator": "not_equal",    "operand": "" }
+            ]
+        },
+
+        //
+        // Parameters rules
+        //
+        {
+            "parameter_description": [
+                "The object"
+            ],
+            "context": [
+                { "key": "parameter_name",                                  "operator": "regex_match",  "operand": "^(?:self|this)$" }
+            ]
+        },
+        {
+            "parameter_description": [
+                "The size of {parameter_name:doxy_undecorate();doxy_words(2,);doxy_lower();doxy_the();}"
+            ],
+            "context": [
+                { "key": "{parameter_name:doxy_undecorate();doxy_words();doxy_lower();}","operator": "regex_match","operand": "^size of " }
+            ]
+        },
+        {
+            "parameter_description": [
+                "The stream to read data from"
+            ],
+            "context": [
+                { "key": "{parameter_name:doxy_undecorate();doxy_words();doxy_lower();}","operator": "regex_match","operand": "^(?:in stream|input stream|load stream|read stream|source stream)$" }
+            ]
+        },
+        {
+            "parameter_description": [
+                "The stream to write data to"
+            ],
+            "context": [
+                { "key": "{parameter_name:doxy_undecorate();doxy_words();doxy_lower();}","operator": "regex_match","operand": "^(?:out stream|output stream|save stream|write stream|destination stream)$" }
+            ]
+        },
+        // {
+        //     "parameter_description": [
+        //         "The list of {parameter_name:doxy_undecorate();doxy_words(-1);doxy_lower();} of {parameter_name:doxy_undecorate();doxy_words(,-1);doxy_lower();doxy_the();}"
+        //     ],
+        //     "context": [
+        //         { "key": "{parameter_name:doxy_undecorate();doxy_words(-2,);doxy_lower();}","operator": "regex_match","operand": "^(?!of )\\w+ (?:colors|colours|dates|depths|durations|heights|identifiers|lengths|names|sizes|states|times|types|widths)$" }
+        //     ]
+        // },
+        // {
+        //     "parameter_description": [
+        //         {parameter_name:doxy_undecorate();doxy_words(,);doxy_lower();doxy_The();} (default: {parameter_default})"
+        //     ],
+        //     "context": [
+        //         // and not apiDoc or SassDoc
+        //         { "key": "{parameter_name:doxy_undecorate();}",             "operator": "regex_match","operand": "^...+$" },
+        //         { "key": "parameter_name",                                  "operator": "not_equal",  "operand": "<unnamed>" },
+        //         { "key": "parameter_default",                               "operator": "not_equal",  "operand": "" }
+        //     ]
+        // },
+
+        {
+            "parameter_description": [
+                "Indicates if {parameter_name:doxy_undecorate();doxy_words(1,);doxy_lower();}"
+            ],
+            "context": [
+                { "key": "{parameter_name:doxy_undecorate();}",             "operator": "regex_match","operand": "^[$_]?(?:can|is|has|are)($|[A-Z_]).*$" }
+            ]
+        },
+        {
+            "parameter_description": [
+                "Indicates if {parameter_name:doxy_undecorate();doxy_words(1,);doxy_lower();doxy_the();} is {parameter_name:doxy_undecorate();doxy_words(0);doxy_lower();doxy_ed();}"
+            ],
+            "context": [
+                { "key": "{parameter_name:doxy_undecorate();doxy_words();}","operator": "regex_match","operand": "^(?:add|allow|exclude|include|ignore|remove|throw|raise) " },
+                { "key": "{parameter_type:doxy_lower();}",                  "operator": "regex_match","operand": "^[$_]?_*t?(?:bool|boolean)(?:_t)?$" }
+            ]
+        },
+        {
+            "parameter_description": [
+                "Indicates if {parameter_name:doxy_undecorate();doxy_words();doxy_lower();}"
+            ],
+            "context": [
+                { "key": "{parameter_name:doxy_undecorate();}",             "operator": "regex_match","operand": "^.*ed$" },
+                { "key": "{parameter_type:doxy_lower();}",                  "operator": "regex_match","operand": "^[$_]?_*t?(?:bool|boolean)(?:_t)?$" }
+            ]
+        },
+        {
+            "parameter_description": [
+                "The new value"
+            ],
+            "context": [
+                { "key": "{undecorated_name:doxy_words(0);doxy_lower();}",  "operator": "equal",      "operand": "set" },
+                { "key": "{parameter_name:doxy_undecorate();}",             "operator": "regex_match","operand": "^.{,3}$" }
+            ]
+        },
+        // Default rule (should be the last one)
+        {
+            "parameter_description": [
+                "{parameter_name:doxy_undecorate();doxy_words(,);doxy_lower();doxy_The();}"
+            ],
+            "context": [
+                { "key": "{parameter_name:doxy_undecorate();doxy_words();}","operator": "regex_match","operand": "^...+$" },
+                { "key": "parameter_name",                                  "operator": "not_equal",  "operand": "<unnamed>" }
+                // { "key": "parameter_default",                               "operator": "equal",      "operand": "" }
+            ]
+        },
+
+        //
+        // Class/Interfaces rules
+        //
+        {
+            "item_description": [
+                "{undecorated_name:doxy_words(,-1);doxy_capitalize();} visualization of the data that model contains."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:class|interface)$" },
+                { "key": "{undecorated_name:doxy_words(-1);doxy_lower();}", "operator": "equal",        "operand": "view" }
+            ]
+        },
+        {
+            "item_description": [
+                "Controls the data flow into {undecorated_name:doxy_words(,-1);doxy_a();doxy_lower();} object and updates the view whenever data changes."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:class|interface)$" },
+                { "key": "{undecorated_name:doxy_words(-1);doxy_lower();}", "operator": "equal",        "operand": "controller" }
+            ]
+        },
+        {
+            "item_description": [
+                "Interface to be notified of the composition of {undecorated_name:doxy_words(,-1);doxy_a();doxy_lower();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:class|interface)$" },
+                { "key": "{undecorated_name:doxy_words(-1);doxy_lower();}", "operator": "equal",        "operand": "visitor" }
+            ]
+        },
+        {
+            "item_description": [
+                "Interface to be notified of {undecorated_name:doxy_words(,-1);doxy_a();doxy_lower();} changes."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:class|interface)$" },
+                { "key": "{undecorated_name:doxy_words(-1);doxy_lower();}", "operator": "equal",        "operand": "observer" }
+            ]
+        },
+        {
+            "item_description": [
+                "Converts an interface to match {undecorated_name:doxy_words(,-1);doxy_a();doxy_lower();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:class|interface)$" },
+                { "key": "{undecorated_name:doxy_words(-1);doxy_lower();}", "operator": "equal",        "operand": "adapter" }
+            ]
+        },
+        {
+            "item_description": [
+                "Front-end that give access to a real {undecorated_name:doxy_words(,-1);doxy_lower();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:class|interface)$" },
+                { "key": "{undecorated_name:doxy_words(-1);doxy_lower();}", "operator": "equal",        "operand": "proxy" }
+            ]
+        },
+        {
+            "item_description": [
+                "Front-end to create {undecorated_name:doxy_words(,-1);doxy_lower();} objects step by step."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:class|interface)$" },
+                { "key": "{undecorated_name:doxy_words(-1);doxy_lower();}", "operator": "equal",        "operand": "builder" }
+            ]
+        },
+        {
+            "item_description": [
+                "Front-end to create {undecorated_name:doxy_words(,-1);doxy_lower();} objects."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:class|interface)$" },
+                { "key": "{undecorated_name:doxy_words(-1);doxy_lower();}", "operator": "equal",        "operand": "factory" }
+            ]
+        },
+        {
+            "item_description": [
+                "Front-end to get access to the unique {undecorated_name:doxy_words(,-1);doxy_lower();} object."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:class|interface)$" },
+                { "key": "{undecorated_name:doxy_words(-1);doxy_lower();}", "operator": "equal",        "operand": "singleton" }
+            ]
+        },
+        {
+            "item_description": [
+                "Exception for signaling {undecorated_name:doxy_words(,-1);doxy_lower();} errors."
+                // "Object thrown on {undecorated_name:doxy_words(,-1);doxy_lower();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:class|interface)$" },
+                { "key": "{undecorated_name:doxy_words(-1);doxy_lower();}", "operator": "equal",        "operand": "exception" }
+            ]
+        },
+        {
+            "item_description": [
+                "This {kind:doxy_lower();} describes {undecorated_name:doxy_words(-1);doxy_lower();doxy_a();} of {undecorated_name:doxy_words(,-1);doxy_lower();doxy_plural();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:class|interface)$" },
+                { "key": "{undecorated_name:doxy_words(-1);doxy_lower();}", "operator": "regex_match",  "operand": "^(?:array|collection|dictionary|list|map|queue|stack|set)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "This {kind:doxy_lower();} describes {undecorated_name:doxy_words(,);doxy_lower();doxy_a();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:class|interface)$" }
+            ]
+        },
+
+        //
+        // Variables rules
+        //
+        {
+            "item_description": [
+                "Turns on {undecorated_name:doxy_words(,-1);doxy_lower();}."
+            ],
+            "context": [
+                { "key": "kind",                                             "operator": "regex_match",  "operand": "^(?:var|constant)$" },
+                { "key": "{undecorated_name:doxy_words(-1);doxy_lower();}",  "operator": "regex_match",  "operand": "^enabled$" }
+            ]
+        },
+
+        //
+        // Constructor / Destructor
+        //
+        {
+            "item_description": [
+                "Constructs a new instance."
+            ],
+            "context": [
+                { "key": "kind",                                              "operator": "regex_match",  "operand": "^(?:constructor)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Destroys the object."
+            ],
+            "context": [
+                { "key": "kind",                                              "operator": "regex_match",  "operand": "^(?:destructor)$" }
+            ]
+        },
+
+        //
+        // Operators rules
+        //
+        {
+            "item_description": [
+                "Negation operator."
+            ],
+            "context": [
+                { "key": "kind",                                              "operator": "regex_match",  "operand": "^(?:operator)$" },
+                { "key": "{name}",                                            "operator": "regex_match",  "operand": "^(operator|) *[-]$" },
+                { "key": "nb_params",                                         "operator": "equal",        "operand": "0" }
+            ]
+        },
+        {
+            "item_description": [
+                "{name:doxy_operator_name();doxy_capitalize();} operator."
+            ],
+            "return_description": [
+                "The result of {name:doxy_operator_name();doxy_lower();doxy_the();}"
+            ],
+            "context": [
+                { "key": "kind",                                              "operator": "regex_match",  "operand": "^(?:operator)$" }
+            ]
+        },
+
+        //
+        // Functions rules
+        //
+        {
+            "item_description": [
+                "{undecorated_name:doxy_words(0);doxy_capitalize();doxy_conjugate();} the specified {param1:doxy_words();doxy_lower();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "nb_params",                                       "operator": "equal",        "operand": "1" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^(?:add|compare to|get|remove)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Returns the hash code for this object."
+            ],
+            "return_description": [
+                "The hash code value for this object"
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "nb_params",                                       "operator": "equal",        "operand": "0" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^(?:hashcode|hash code)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Returns {undecorated_name:doxy_words(1,);doxy_lower();doxy_a();} representation of the object."
+            ],
+            "return_description": [
+                "{undecorated_name:doxy_words(1,);doxy_capitalize();} representation of the object."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "nb_params",                                       "operator": "equal",        "operand": "0" },
+                // { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^to (?:string|array|binary|int|integer|char|chars|character|characters|lowercase|titlecase|uppercase|lower case|title case|upper case)$" }
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^to (?:.*)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Creates a new instance from {undecorated_name:doxy_words(1,);doxy_lower();doxy_a();}."
+            ],
+            "return_description": [
+                "The new instance."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "nb_params",                                       "operator": "equal",        "operand": "0" },
+                // { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^from (?:string|array|binary|int|integer|char|chars|character|characters|lowercase|titlecase|uppercase|lower case|title case|upper case)$" }
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^from (?:.*)$" }
+            ]
+        },
+        {
+            // You will found ``item_description`` use a shared rule.
+            "return_description": [
+                "{undecorated_name:doxy_words(1,);doxy_lower();doxy_The();}."
+            ],
+            "context": [
+                { "key": "kind",                                              "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words(0,2);doxy_lower();}",  "operator": "regex_match",  "operand": "^(?:build|get|fetch|retrieve) " }
+            ]
+        },
+        {
+            "item_description": [
+                "Called when {undecorated_name:doxy_words(1,);doxy_lower();}."
+            ],
+            "context": [
+                { "key": "kind",                                              "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words(0,);doxy_lower();}",   "operator": "regex_match",  "operand": "^(?:on) .*ed$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Called {undecorated_name:doxy_words(0,);doxy_lower();}."
+            ],
+            "context": [
+                { "key": "kind",                                              "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words(0,2);doxy_lower();}",  "operator": "regex_match",  "operand": "^(?:on) " }
+            ]
+        },
+        {
+            "item_description": [
+                "Determines whether the specified {param1:doxy_words();doxy_lower();} is {undecorated_name:doxy_words(1,);doxy_lower();}."
+            ],
+            "return_description": [
+                "True if the specified {param1:doxy_words();doxy_lower();} is {undecorated_name:doxy_words(1,);doxy_lower();}, False otherwise."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{nb_params}",                                     "operator": "equal",        "operand": "1" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^is " }
+            ]
+        },
+        {
+            "item_description": [
+                "Determines if {undecorated_name:doxy_words(1,);doxy_lower();}."
+            ],
+            "return_description": [
+                "True if {undecorated_name:doxy_words(1,);doxy_lower();}, False otherwise."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^(is|has) " }
+            ]
+        },
+        {
+            "item_description": [
+                "Determines if it {undecorated_name:doxy_words(0,);doxy_lower();}."
+            ],
+            "return_description": [
+                "True if {undecorated_name:doxy_words(0,);doxy_lower();}, False otherwise."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^(?:contains|equals|ends|exists|has|matches|starts) (\\w+)ed\\b" }
+            ]
+        },
+        {
+            "item_description": [
+                "Determines if {undecorated_name:doxy_words(1,-1);doxy_lower();doxy_the();} {undecorated_name:doxy_words(0);doxy_lower();} {undecorated_name:doxy_words(-1);doxy_lower();}."
+            ],
+            "return_description": [
+                "True if {undecorated_name:doxy_words(0,);doxy_lower();}, False otherwise."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^(?:contains|equals|ends|exists|has|matches|starts) .* (\\w+)ed$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Determines if {undecorated_name:doxy_words();doxy_lower();}."
+            ],
+            "return_description": [
+                "True if {undecorated_name:doxy_words();doxy_lower();}, False otherwise."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^.* (?:contains|equals|ends|exists|has|matches|starts)$" },
+                { "key": "{return}",                                        "operator": "not_equal",    "operand": "^[$_]?_*t?(?:bool|boolean)(?:_t)?$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Determines ability to {undecorated_name:doxy_words(1,);doxy_lower();}."
+            ],
+            "return_description": [
+                "True if able to {undecorated_name:doxy_words(1,);doxy_lower();}, False otherwise."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^can " }
+            ]
+        },
+        {
+            "item_description": [
+                "{undecorated_name:doxy_words(0);doxy_capitalize();doxy_conjugate();} {undecorated_name:doxy_words(1,);doxy_a();doxy_lower();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^(?:add|append|begin|broadcast|build|close|commit|connect|create|decode|do|download|draw|dump|duplicate|encode|end|enter|fetch|find|finish|inform|link|load|locate|log|make|notify|open|perform|post|prepend|print|push|put|query|read|release|remove|report|retrieve|return|save|scan|send|split|start|stop|store|upload|write) " }
+            ]
+        },
+        {
+            "item_description": [
+                "{undecorated_name:doxy_words(0);doxy_capitalize();doxy_conjugate();} {undecorated_name:doxy_words(1,);doxy_the();doxy_lower();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^(?:attach|collapse|augment|compare|decrease|demote|detach|determine|disable|enable|extend|expand|get|hide|increase|init|initialise|initialize|lock|promote|reduce|set|show|unlock) (?!(?:down|up|on|off)( |$))" }
+            ]
+        },
+        {
+            "item_description": [
+                "{undecorated_name:doxy_words();doxy_capitalize();doxy_conjugate();} the object."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",      "operand": "^(?:function|lambda)$" },
+                { "key": "{nb_params}",                                     "operator": "equal",            "operand": "0" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",      "operand": "^(?:activate|apply|clear|copy|decompress|delete|delink|destroy|disconnect|display|download|extract|fetch|flush|init|initialise|initialize|install|pop|process|pull|remove|render|reset|retrieve|synchronise|synchronize|unlink|update)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "{undecorated_name:doxy_words();doxy_capitalize();doxy_conjugate();} the given {param1:doxy_words();doxy_lower();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",      "operand": "^(?:function|lambda)$" },
+                { "key": "{param1}",                                        "operator": "not_regex_match",  "operand": "^(?:self|this)$" },
+                { "key": "{nb_params}",                                     "operator": "equal",            "operand": "1" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",      "operand": "^(?:activate|apply|clear|copy|decompress|delete|delink|destroy|disconnect|display|download|extract|fetch|flush|init|initialise|initialize|install|pop|process|pull|remove|render|reset|retrieve|synchronise|synchronize|unlink|update)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Searches for the first match."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^(?:index of|find|search)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Searches for all matches."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^(?:index of|find|search) all$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Searches for any matches."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^(?:index of|find|search) any$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Creates a new instance of the object with same properties than original."
+            ],
+            "return_description": [
+                "Copy of this object."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "nb_params",                                       "operator": "equal",        "operand": "0" },
+                { "key": "{name:doxy_lower();}",                            "operator": "equal",        "operand": "clone" }
+            ]
+        },
+        {
+            "item_description": [
+                "Returns {undecorated_name:doxy_words(1,);doxy_lower();doxy_a();} representation of the object."
+            ],
+            "return_description": [
+                "{undecorated_name:doxy_words(1,);doxy_capitalize();} representation of the object."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function)$" },
+                { "key": "nb_params",                                       "operator": "equal",        "operand": "0" },
+                { "key": "{undecorated_name:doxy_words(0);doxy_lower();}",  "operator": "regex_match",  "operand": "^(?:to)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Returns {undecorated_name:doxy_words(2,);doxy_lower();doxy_a();} representation of {undecorated_name:doxy_words(0);doxy_lower();doxy_a();}."
+            ],
+            "return_description": [
+                "{undecorated_name:doxy_words(2,);doxy_capitalize();} representation of {undecorated_name:doxy_words(0);doxy_lower();doxy_the();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function)$" },
+                { "key": "nb_params",                                       "operator": "equal",        "operand": "1" },
+                { "key": "{undecorated_name:doxy_words(1,);doxy_lower();}", "operator": "regex_match",  "operand": "^(?:to) (string|c string|c str)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Returns a unambiguous string representation of the object (for debug...)."
+            ],
+            "return_description": [
+                "String representation of the object."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "nb_params",                                       "operator": "equal",        "operand": "0" },
+                { "key": "{name}",                                          "operator": "regex_match",  "operand": "^(?:__repr__)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Returns a string representation of the object."
+            ],
+            "return_description": [
+                "String representation of the object."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "nb_params",                                       "operator": "equal",        "operand": "0" },
+                { "key": "{name}",                                          "operator": "regex_match",  "operand": "^(?:__str__)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Creates an iterator for this container."
+            ],
+            "return_description": [
+                "The iterator."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "nb_params",                                       "operator": "equal",        "operand": "0" },
+                { "key": "{name}",                                          "operator": "regex_match",  "operand": "^(?:__iter__)$" }
+            ]
+        },
+        {
+            "item_description": [
+                "Counts the number of {undecorated_name:doxy_words(1,);doxy_lower();}."
+            ],
+            "return_description": [
+                "Number of {undecorated_name:doxy_words(1,);doxy_lower();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^count " }
+            ]
+        },
+        {
+            "item_description": [
+                "Calculates the {undecorated_name:doxy_words(1,);doxy_lower();}."
+            ],
+            "return_description": [
+                "{undecorated_name:doxy_words(1,);doxy_lower();doxy_The();}."
+            ],
+            "context": [
+                { "key": "kind",                                            "operator": "regex_match",  "operand": "^(?:function|lambda)$" },
+                { "key": "{undecorated_name:doxy_words();doxy_lower();}",   "operator": "regex_match",  "operand": "^(?:calc|calculate|compute) " }
+            ]
+        },
+
+        //
+        // Exception description rules
+        //
+        // {
+        //     "exception_description": [
+        //         "Raised on..."
+        //     ],
+        //     "context": [
+        //     ]
+        // },
+
+        //
+        // Return description rules
+        //
+        {
+            "return_description": [
+                "{return:doxy_type_to_description();doxy_The();}."
+            ],
+            "context": [
+                { "key": "{return:doxy_type_to_description();}",        "operator": "not_equal",   "operand": "" }
+            ]
+        },
+        {
+            "return_description": [
+                "{return:doxy_undecorate();doxy_words();doxy_lower();doxy_The();}."
+            ],
+            "context": [
+                { "key": "{return}",                                    "operator": "regex_match",  "operand": "^[A-Za-z_]+$" }, // This rule does NOT support template, scopename...
+                { "key": "{return:doxy_undecorate();doxy_words();}",    "operator": "regex_match",  "operand": "^(?:[A-Za-z]+ [A-Za-z ]+)|status|error$" } // At least 2 words
+            ]
+        }
+    ],
+
+    // Used to overload ``autofill_rules_default`` values.
+    //
+    // If you want to disable parameters description (common request), you can try:
+    //
+    // .. code-block:: javascript
+    //
+    //    "autofill_rules": [
+    //        {
+    //            "parameter_description": [
+    //                "."
+    //            ]
+    //        }
+    //    ],
+    "autofill_rules": [
+    ],
+
+    // Used to overload internal words expansion (words must be lower-case)
+    //
+    // If you want to disable an internal expansions simply add it here.
+    "words_expansion": {
+        // "inv": "invoice", // but may be "inverse" or "invalid"
+    },
+
+    // Default reliability for generated text.
+    //
+    // Should be:
+    //     - ``0``:   disable auto-fill ('default' and 'custom' rules)
+    //     - ``60``:  text is generated only if none found in source WITH a tab stop
+    //     - ``100``: text is generated only if none found in source WITHOUT tab stop
+    //     - ``101``: generated text override source one
+    "autofill_reliability_percentage": 60,
+
+    // For each Sublime Text language, give the preferred parser and
+    // documentation style (also called "documentation generator").
+    "profiles_default": [
+        {
+            "languages":  [ "actionscript" ],
+            "parsers":    [ "LanguageGeneric" ],
+            "doc_styles": [ "AsDoc" ]
+        },
+        {
+            "languages":  [ "c++", "c" ],
+            "parsers":    [ "LanguageCpp" ],
+            "doc_styles": [ "Doxygen" ]
+        },
+        {
+            "languages":  [ "cuda-c++", "angelscript", "glsl" ],
+            "parsers":    [ "LanguageCpp" ], // or "LanguageGeneric"
+            "doc_styles": [ "Doxygen" ]
+        },
+        {
+            "languages":  [ "cs" ],
+            "parsers":    [ "LanguageCSharp" ],
+            "doc_styles": [ "XmlDoc" ], // or "Doxygen"
+            "preferred_comments_styles": [
+                [
+                    [ "/// ", "", "" ],
+                    [ "/// " ]
+                ]
+            ]
+        },
+        {
+            "languages":  [ "dart" ],
+            "parsers":    [ "LanguageGeneric" ],
+            "doc_styles": [ "Doxygen" ]
+        },
+        {
+            "languages":  [ "erlang" ],
+            "parsers":    [ "LanguageGeneric" ],
+            "doc_styles": [ "ApiDoc" ]
+        },
+        {
+            "languages":  [ "groovy", "apex" ],
+            "parsers":    [ "LanguageJava", "LanguageGeneric" ],
+            "doc_styles": [ "JavaDoc" ]// or "Doxygen"
+        },
+        {
+            "languages":  [ "java" ],
+            "parsers":    [ "LanguageJava" ],
+            "doc_styles": [ "JavaDoc" ]// or "Doxygen", "ApiDoc"
+        },
+        {
+            "languages":  [ "js" ],
+            "parsers":    [ "LanguageJavaScript" ],
+            "doc_styles": [ "JsDoc", "GoogleClosure" ]// or "YuiDoc", "DoxyDoc", Doxygen", "ApiDoc"... according your preference
+        },
+        {
+            "languages":  [ "solidity" ], // Solidity/Etherum
+            "parsers":    [ "LanguageGeneric" ],
+            "doc_styles": [ "Solidity" ]
+        },
+        {
+            "languages":  [ "json" ],
+            "parsers":    [ "LanguageJson" ],
+            "doc_styles": [ "Doxygen" ], // or JsDoc, "JavaDoc"...
+            "preferred_comments_styles": [
+                [
+                    [ "/// ", "", "" ],
+                    [ "/// " ]
+                ]
+            ]
+        },
+        {
+            "languages":  [ "objc", "objc++", "matlab", "pascal", "ocaml", "sql" ],
+            "parsers":    [ "LanguageGeneric" ],
+            "doc_styles": [ "Doxygen" ]// "DoxyDoxygen_contrib_HeaderDoc" (if installed for Objective C)
+        },
+        {
+            "languages":  [ "mq4" ], // MQL4
+            "parsers":    [ "LanguageCpp" ], // or "LanguageGeneric"
+            "doc_styles": [ "Doxygen" ]
+        },
+        {
+            "languages":  [ "pde" ], // processing language (https://processing.org)
+            "parsers":    [ "LanguageCpp", "LanguageGeneric" ],
+            "doc_styles": [ "Doxygen" ]
+        },
+        {
+            "languages":  [ "perl" ],
+            "parsers":    [ "LanguageGeneric" ],
+            "doc_styles": [ "ApiDoc" ]
+        },
+        {
+            "languages":  [ "php" ],
+            "parsers":    [ "LanguagePhp" ],
+            "doc_styles": [ "PhpDoc", "PhpUnitDoc" ]// or "ApiDoc"
+        },
+        {
+            "languages":  [ "zephir" ],
+            "parsers":    [ "LanguageGeneric" ],
+            "doc_styles": [ "PhpDoc" ]
+        },
+        {
+            "languages":  [ "python", "cython" ],
+            "parsers":    [ "LanguagePython" ],
+            "doc_styles": [ "Sphinx" ]// or "Doxygen", ApiDoc", "Sphinx" (you may consider Breathe's Doc)
+        },
+        {
+            "languages":  [ "qml" ],
+            "parsers":    [ "LanguageJavaScript" ], // or "LanguageGeneric" (but syntax 0.0.4 buggy)
+            "doc_styles": [ "Doxygen" ]// http://agateau.com/projects/doxyqml/
+        },
+        {
+            "languages":  [ "ruby", "crystal" ],
+            "parsers":    [ "LanguagePython", "LanguageGeneric" ],
+            "doc_styles": [ "Doxygen" ]// or "ApiDoc"
+        },
+        {
+            "languages":  [ "rust" ],
+            "parsers":    [ "LanguageRust" ],
+            "doc_styles": [ "Doxygen" ]
+        },
+        //{
+        //    "languages":  [ "css" ],
+        //    "parsers":    [ "LanguageGeneric" ],
+        //    "doc_styles": [ "DoxyDoc" ] # Maybe "Kss" in future
+        //},
+        {
+            "languages":  [ "sass", "scss" ],
+            "parsers":    [ "LanguageGeneric" ],
+            "doc_styles": [ "SassDoc" ]// or "DoxyDoc"
+        },
+        {
+            "languages":  [ "shell" ], // Bash
+            "parsers":    [ "LanguageBash" ],
+            "doc_styles": [ "Doxygen" ]
+        },
+        {
+            "languages":  [ "swift" ],
+            "parsers":    [ "LanguageSwift" ],
+            "doc_styles": [ "Doxygen" ]
+        },
+        {
+            "languages":  [ "ts", "tsx" ],
+            "parsers":    [ "LanguageJavaScript", "LanguageGeneric" ], // use LanguageGeneric as fallback
+            "doc_styles": [ "JsDoc" ]
+        }
+    ],
+
+    // Used to overload ``profiles_default`` values.
+    "profiles": [
+    ],
+
+    // Used to ease commands overload
+    //
+    // .. versionadded:: 0.70.0
+    //
+    // .. warning::
+    //
+    //     EXPERIMENTAL. Only supports ApiDoc, AsDoc, DoxyDoc, Doxygen, Drupal, JavaDoc, JsDoc, PhpDoc, PhpUnitDoc, SassDoc, Solidity for now
+    //
+    // .. note::
+    //
+    //     This setting may require SublimeText restart to take effect
+    //
+    "doc_styles": {
+        "JsDoc": [
+            // Question: How to choose between JSDoc @param tag layout #79
+            //{ "name": "@param", "args_format": "\t\\{<type>\\}\t[\\[?optional_start>]<parameter_name>[\\=<parameter_default>][\\]?optional_end>] - { parameter_description }" }
+
+            // For EsDoc2 users
+            //{ "name": "@experimental", "args_format": "\n{ description }", "help": "Describe breaking changes" }
+            //{ "name": "@test", "args_format": "\t\\{<identifier>\\}" }
+        ]
+    },
+
+    // Rules to guess type from name.
+    "notations_map": [
+        // Uncomment this if you like Hungarian notation
+        // {
+        //     "regexp": "[$_]?(s|sz|psz)($|[A-Z_]).*$", // names starting with "s", "sz", "psz" are assumed string
+        //     "type": "~string~"
+        // },
+        // {
+        //     "regexp": "[$_]?(i|pi)($|[A-Z_]).*$", // names starting with "i", "pi" are assumed integer
+        //     "type": "~integer~"
+        // },
+        // {
+        //     "regexp": "[$_]?(a|ai|asz|apsz)($|[A-Z_]).*$", // names starting with "a" are assumed array
+        //     "type": "~array~"
+        // },
+        // {
+        //     "regexp": "[$_]?(f)($|[A-Z_]).*$", // names starting with "f" are assumed float
+        //     "type": "~float~"
+        // },
+        {
+            "regexp": "[$_]?(?:can|is|has|are)($|[A-Z_]).*$", // names starting with "is", "has" or "are" are assumed to be booleans (prefixes "$"" or "_" are ignored)
+            "type": "~boolean~"
+        },
+        {
+            "regexp": "(?:callback|cb|done|fn|method|next)$", // callback, cb, done, fn, method and next are assumed to be functions
+            "type": "Function"
+        }
+    ]
+}

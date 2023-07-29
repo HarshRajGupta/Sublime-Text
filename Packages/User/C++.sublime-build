@@ -1,20 +1,43 @@
 {
     "selector": "source.c++",
-    "working_dir": "/Users/Harsh Raj Gupta/Documents/.cpp",
-    "shell_cmd": "g++.exe -std=c++17 \"${file}\" && a.exe < input > output 2> log",
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "shell_cmd": "g++.exe -g -std=c++20 \"${file}\" 2> log.txt && a.exe < input.txt > output.txt 2> log.txt",
+    "linux": {
+        "shell_cmd": "g++ -g -std=c++20 \"${file}\" && a.out < input > output 2> log && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
+    },
+    "windows": {
+        "working_dir": "/Users/Harsh/OneDrive/Documents/C++",
+    },
     "variants": [
         {
-            "name": "Linux",
-            "working_dir": "/home/harsh/Documents/.cpp",
-            "shell_cmd": "g++ -std=c++17 \"${file}\" && a.out < input > output 2> log && rm a.out && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
+            "name": "Run & Commit",
+            "shell_cmd": "g++.exe -g -std=c++20 \"${file}\" 2> log.txt && a.exe < input.txt > output.txt 2> log.txt && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
+            "syntax": "Packages/Scala/Scala.sublime-syntax"
         },
         {
-            "name": "Run + Commit",
-            "shell_cmd": "g++.exe -std=c++17 \"${file}\" && a.exe < input > output 2> log && rm a.exe && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
+            "name": "Clang",
+            "shell_cmd": "clang++.exe -g -std=c++20 \"${file}\" 2> log.txt && a.exe < input.txt > output.txt 2> log.txt && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
+            "syntax": "Packages/Scala/Scala.sublime-syntax"
         },
         {
-            "name": "Run + Push",
-            "shell_cmd": "g++.exe -std=c++17 \"${file}\" && a.exe < input > output 2> log && rm a.exe && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\" && git push",
+            "name": "iC++ (Tab)",
+            "target": "terminus_open",
+            "title": "Output",
+            "post_window_hooks": [
+                [
+                    "unselect_to_right"
+                ],
+                [
+                    "select_to_left"
+                ]
+            ],
+            "shell_cmd": "g++.exe -std=c++20 \"${file}\" && a.exe && del a.exe",
+            "auto_close": false,
+        },
+        {
+            "name": "iC++ (Shell)",
+            "target": "terminus_exec",
+            "shell_cmd": "g++.exe -std=c++20 \"${file}\" && a.exe && del a.exe",
         }
-    ]
+    ],
 }

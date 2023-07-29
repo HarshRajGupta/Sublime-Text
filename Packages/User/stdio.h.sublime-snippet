@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    ${1:/* Code */}
+}
+
+signed main() {
+    int testCase; cin >> testCase;
+    while (testCase--) solve();
+    return 0;
+}
+
+/*
+ > @ScratchPad 
+*/]]></content>
+    <tabTrigger>stdio.h</tabTrigger>
+    <scope>( source.objc | source.c++ | source.cpp ) - meta.preprocessor.include - comment - string</scope>
+    <description>#include &lt;stdio.h&gt;</description>
+</snippet>

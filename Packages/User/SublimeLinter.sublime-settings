@@ -1,20 +1,42 @@
 {
-    "debug": true,
     "styles": [
         {
             "scope": "region.yellowish markup.warning.sublime_linter",
-            "icon": "x",
+            // "icon": "x",
+            "icon": "none",
             "mark_style": "squiggly_underline",
+            // "annotation": "{msg}",
             "types": [
                 "warning"
-            ]
+            ],
+            "priority": 0,
         },
         {
-            "icon": "x",
+            "scope": "region.redish markup.error.sublime_linter",
+            "icon": "none",
+            // "icon": "x",
             "mark_style": "solid_underline",
             "priority": 1,
-            "scope": "region.redish markup.error.sublime_linter"
+            "annotation": "{msg}",
+            // "phantom": "{msg}",
+            "types": [
+                "error"
+            ]
         }
     ],
-    "delay": 0.001,
+    "statusbar.show_active_linters": false,
+    "no_column_highlights_line": true,
+    "linters": {
+        "g++": {
+            "disable": false,
+            "executable": [
+                "g++"
+            ],
+            "args": [
+                "-fsyntax-only",
+                "-std=c++17"
+            ],
+            "excludes": [],
+        },
+    },
 }

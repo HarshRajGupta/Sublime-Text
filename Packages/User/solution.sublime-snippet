@@ -1,0 +1,33 @@
+<snippet>
+    <content><![CDATA[#include <bits/stdc++.h>${1:
+using namespace std;
+using namespace __gnu_debug;
+
+#ifndef debug
+#define debug(...)
+#endif}
+
+class Solution {
+   public:
+    ${2:/* function */}
+    void test() {
+        ${3:{\}}
+    }
+    Solution() {
+        ios::sync_with_stdio(0);
+        cin.tie(0);
+        cout.tie(0);
+    }
+};
+
+/**
+ * ${4:@ScratchPad}
+ */
+
+#ifdef __TEST__
+__TEST__
+#endif]]></content>
+    <tabTrigger>leetCode</tabTrigger>
+    <scope>( source.objc | source.c++ | source.cpp ) - meta.preprocessor.include - comment - string</scope>
+    <description>Solution().test()</description>
+</snippet>

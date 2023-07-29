@@ -1,8 +1,6 @@
 <snippet>
-    <content><![CDATA[const int ceil (const long double &n, const long double d = 1) {
-    if (n > (d * ((int)(n / d))))
-        return (n / d) + 1;
-    return (n / d);
+    <content><![CDATA[int64_t ceil (long double n, long double d = 1) {
+    return (n / d) + (n > (d * ((int64_t)(n / d))));
 }]]></content>
     <tabTrigger>ceil</tabTrigger>
     <scope>( source.objc | source.c++ | source.cpp | source.c ) - meta.preprocessor.include - comment - string</scope>

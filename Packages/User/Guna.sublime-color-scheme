@@ -1,25 +1,34 @@
 // Documentation at https://www.sublimetext.com/docs/color_schemes.html
+// {
+// 	"variables": {
+// 		"brackets" : "rgb(91.8, 153, 214)",
+//         "operator": "rgb(95.5, 180, 180)",
+// 	},
+// 	"globals": {},
+// 	"rules": [
+// 		{
+//             "name": "Operators",
+//             "scope": "keyword.operator",
+//             "foreground": "var(operator)",
+//             "font_style": "italic"
+//         },
+//         {
+//             "name": "Punctuation",
+//             "scope": "punctuation.section",
+//             "foreground": "var(brackets)",
+//             "font_style": "italic"
+//         },
+// 	]
+// }
 {
     "variables":
     {
-        "brackets" : "rgb(91.8, 153, 214)",
-        "operator": "rgb(95.5, 180, 180)",
     },
-    "globals": {},
+    "globals":
+    {
+    },
     "rules":
     [
-        {
-            "name": "Operators",
-            "scope": "keyword.operator",
-            "foreground": "var(operator)",
-            "font_style": "italic"
-            // "font_style": "bold"
-        },
-        {
-            "name": "Punctuation",
-            "scope": "punctuation.section",
-            "foreground": "var(brackets)",
-            "font_style": "italic"
-        },
+        
     ]
 }

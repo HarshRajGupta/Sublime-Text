@@ -1,20 +1,4 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
 {
 	"lsp_format_on_save": true,
-	"lsp_code_actions_on_save": {
-		"source.fixAll": true,
-		"source.organizeImports": true,
-	},
-	"show_diagnostics_panel_on_save": 0,
-	"diagnostics_highlight_style": {
-		"error": "underline",
-		"hint": "stippled",
-		"info": "stippled",
-		"warning": "squiggly",
-	},
-	// "semantic_highlighting": true,
-	"clients": {
-		"clangd": {
-			"enabled": false,
-		},
-	},
 }
