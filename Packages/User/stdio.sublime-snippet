@@ -6,7 +6,7 @@ signed main(void) {
     ${1:/* Code */}
     return 0;
 }]]></content>
-    <tabTrigger>stdio</tabTrigger>
+    <tabTrigger>#include &lt;stdio&gt;</tabTrigger>
     <scope>( source.objc | source.c++ | source.cpp ) - meta.preprocessor.include - comment - string</scope>
     <description>#include &lt;stdio&gt;</description>
 </snippet>

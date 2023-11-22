@@ -2,22 +2,8 @@
     <content><![CDATA[struct TreeNode {
     int val;
     TreeNode *left, *right;
-    TreeNode(int x = 0, TreeNode *left = NULL, TreeNode *right = NULL) : val(x), left(left), right(right) {}
-    void inOrder(function<void(int)> f = [](int x) {cout << x << ' ';}) {
-        if (left) left->inOrder(f);
-        f(val);
-        if (right) right->inOrder(f);
-    }
-    void preOrder(function<void(int)> f = [](int x) {cout << x << ' ';}) {
-        f(val);
-        if (left) left->preOrder(f);
-        if (right) right->preOrder(f);
-    }
-    void postOrder(function<void(int)> f = [](int x) {cout << x << ' ';}) {
-        if (left) left->postOrder(f);
-        if (right) right->postOrder(f);
-        f(val);
-    }
+    TreeNode(int x = 0, TreeNode *left = NULL, TreeNode *right = NULL)
+        : val(x), left(left), right(right) {}
 };]]></content>
     <tabTrigger>TreeNode</tabTrigger>
     <scope>( source.objc | source.c++ | source.cpp ) - meta.preprocessor.include - comment - string</scope>

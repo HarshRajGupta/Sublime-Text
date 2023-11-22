@@ -1,0 +1,33 @@
+// RainbowBrackets Preferences – User
+// ====================================================
+{
+	"default_config": {
+        "bracket_pairs": {
+            "(": ")",
+            "[": "]",
+            "{": "}"
+        },
+
+        "coloring": true,
+
+        "enabled": true,
+
+        "ignored_scopes": [
+            "comment",
+            "string",
+            "constant"
+        ],
+
+        "rainbow_colors": [
+            "hsl(0, 69%, 69%)",
+            "hsl(30, 69%, 69%)",
+            "hsl(45, 69%, 69%)",
+            "hsl(120, 69%, 69%)",
+            "hsl(165, 69%, 69%)",
+            "hsl(210, 69%, 69%)",
+            "hsl(270, 69%, 69%)"
+        ],
+
+        "mismatch_color": "#FFF"
+    },
+}

@@ -1,0 +1,28 @@
+<snippet>
+    <content><![CDATA[vector<vector<int>> mst(Graph *g) {
+	sort(g->edges.begin(), g->edges.end());
+	vector<int> parent(g->adj.size());
+	iota(parent.begin(), parent.end(), 0);
+	vector<vector<int>> mst(g->adj.size());
+	function<int(int)> find = [&](int x) {
+		if (parent[x] == x) return x;
+		return parent[x] = find(parent[x]);
+	};
+	function<void(int, int)> unionSet = [&](int x, int y) {
+		x = find(x), y = find(y);
+		if (x == y) return;
+		parent[x] = y;
+	};
+	for (auto e : g->edges) {
+		int u = e[1], v = e[2];
+		if (find(u) != find(v)) {
+			mst[u].push_back(v);
+			unionSet(u, v);
+		}
+	}
+	return mst;
+}]]></content>
+    <tabTrigger>mst | graph</tabTrigger>
+    <scope>( source.objc | source.c++ | source.cpp ) - meta.preprocessor.include - comment - string</scope>
+    <description>Graph</description>
+</snippet>

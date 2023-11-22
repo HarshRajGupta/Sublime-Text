@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[struct disJointSet {
     vector<int> parent;
-    disJointSet(int n): parent(vector<int>(n + 1)) {
+    disJointSet(int n) : parent(vector<int>(n + 1)) {
         iota(parent.begin(), parent.end(), 0);
     }
     const int find(const int x) {

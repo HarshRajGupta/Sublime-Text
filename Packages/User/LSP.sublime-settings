@@ -1,4 +1,14 @@
 // Settings in here override those in "LSP/LSP.sublime-settings"
 {
-	"lsp_format_on_save": true,
+	// "lsp_format_on_save": true,
+	"completion_insert_mode": "replace",
+	"show_inlay_hints": true,
+	// "semantic_highlighting": true,
+	"show_code_actions": "bulb",
+	"lsp_code_actions_on_save": {
+    	"source.*": true,
+  	},
+  	"show_diagnostics_annotations_severity_level": 1,
+  	"diagnostics_delay_ms": 1000,
+  	// "hover_highlight_style": "outline",
 }

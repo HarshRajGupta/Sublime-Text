@@ -1,34 +1,20 @@
 {
 	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"A File Icon",
 		"AutoFoldCode",
-		"BracketHighlighter",
 		"Colored Comments",
-		"ColorHelper",
-		"DocBlockr",
-		"DoxyDoxygen",
-		"Guna",
 		"LSP",
 		"LSP-clangd",
 		"LSP-copilot",
-		"LSP-cspell",
-		"LSP-json",
-		"Notes",
+		"LSP-jdtls",
 		"Package Control",
-		"PackageDev",
+		"RainbowBrackets",
 		"SublimeAStyleFormatter",
-		"SublimeLinter",
-		"SublimeLinter-gcc",
-		"Tabnine",
 		"Terminus",
-	],
-	"enable_tests": true,
-	"in_process_packages":
-	[
-	],
-	"repositories":
-	[
 	],
 }

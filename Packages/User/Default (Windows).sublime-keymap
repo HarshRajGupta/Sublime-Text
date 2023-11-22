@@ -1,23 +1,31 @@
 [
-    {
-        "keys": [
-            "ctrl+alt+p"
-        ],
-        "command": "terminus_open",
-        "args": {
-            "post_window_hooks": [
-                [
-                    "unselect_others"
-                ],
-                [
-                    "select_to_left"
-                ]
-            ],
-            "focus": true,
-            "title": "Terminal",
-        }
-    }, { 
-        "keys": ["f2"], 
-        "command": "toggle_bookmark" 
-    },
+	{
+		"keys": [
+			"tab"
+		],
+		"command": "copilot_accept_completion",
+		"context": [
+			{
+				"key": "setting.copilot.completion.is_visible"
+			}
+		]
+	},
+	{
+		"keys": [
+			"ctrl+alt+p"
+		],
+		"command": "terminus_open",
+		"args": {
+			"post_window_hooks": [
+				[
+					"unselect_others"
+				],
+				[
+					"select_to_left"
+				]
+			],
+			"focus": true,
+			"title": "Terminal",
+		}
+	}
 ]

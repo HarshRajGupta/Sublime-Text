@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[int64_t ceil (long double n, long double d = 1) {
-    return (n / d) + (n > (d * ((int64_t)(n / d))));
-}]]></content>
-    <tabTrigger>ceil</tabTrigger>
-    <scope>( source.objc | source.c++ | source.cpp | source.c ) - meta.preprocessor.include - comment - string</scope>
-    <description>Ceil | Greater Divisor</description>
-</snippet>

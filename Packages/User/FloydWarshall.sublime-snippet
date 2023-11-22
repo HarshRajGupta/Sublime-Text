@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[vector<vector<int>> floydWarshall(const Graph *g) {
+	vector<vector<int>> dist(g->adj.size(), vector<int>(g->adj.size(), 1e9));
+	for (auto &e : g->edges) dist[e[1]][e[2]] = min(dist[e[1]][e[2]], e[0]);
+	for (size_t k = 0; k < dist.size(); ++k)
+		for (size_t i = 0; i < dist.size(); ++i)
+			for (size_t j = 0; j < dist.size(); ++j)
+				dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
+	return dist;
+}]]></content>
+    <tabTrigger>floydWarshall | graph</tabTrigger>
+    <scope>( source.objc | source.c++ | source.cpp ) - meta.preprocessor.include - comment - string</scope>
+    <description>Graph</description>
+</snippet>

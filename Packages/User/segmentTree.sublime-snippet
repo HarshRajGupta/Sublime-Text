@@ -1,0 +1,68 @@
+<snippet>
+    <content><![CDATA[template <typename T = int> class segmentTree {
+	/* Customize the tree */
+	const T outLier = ${1:INT32_MIN};
+	T combine(const T &a, const T &b) {
+		if (a == outLier)
+			return b;
+		else if (b == outLier)
+			return a;
+		else
+			return ${2:max(a, b)}; 
+	}
+
+	vector<T> arr, tree;
+	void build(size_t node, size_t start, size_t end) {
+		if (start == end)
+			tree[node] = arr[start];
+		else {
+			const size_t mid = (start + end) >> 1, child = (node << 1);
+			build(child + 1, start, mid);
+			build(child + 2, mid + 1, end);
+			tree[node] = combine(tree[child + 1], tree[child + 2]);
+		}
+	}
+	T find(size_t node, size_t start, size_t end, size_t l, size_t r) {
+		if (l > end || start > r) {
+			return outLier;
+		} else if (l <= start && end <= r) {
+			return tree[node];
+		} else {
+			const size_t mid = (start + end) >> 1, child = (node << 1);
+			T left = find(child + 1, start, mid, l, r);
+			T right = find(child + 2, mid + 1, end, l, r);
+			return combine(left, right);
+		}
+	}
+	void change(size_t node, size_t start, size_t end, size_t pos, const T &new_val) {
+		if (start == end) {
+			tree[node] = new_val;
+		} else {
+			const size_t mid = (start + end) >> 1, child = (node << 1);
+			if (pos <= mid)
+				change(child + 1, start, mid, pos, new_val);
+			else
+				change(child + 2, mid + 1, end, pos, new_val);
+			tree[node] = combine(tree[child + 1], tree[child + 2]);
+		}
+	}
+public:
+	segmentTree(const vector<T> &a) : arr(a) {
+		tree.resize(arr.size() << 2);
+		build(0u, 0u, arr.size() - 1);
+	}
+	T querry(size_t l, size_t r) {
+		if (l > r || r > arr.size() - 1 || l < 0)
+			return outLier;
+		else
+			return find(0u, 0u, arr.size() - 1, l, r);
+	}
+	void update(size_t pos, const T &new_val) {
+		if (pos >= 0 && pos < arr.size())
+			change(0u, 0u, arr.size() - 1, pos, new_val);
+	}
+};]]></content>
+    <tabTrigger>Segment Tree</tabTrigger>
+    <scope>( source.objc | source.c++ | source.cpp | source.c ) - meta.preprocessor.include - comment - string</scope>
+    <description>Segment Tree</description>
+</snippet>

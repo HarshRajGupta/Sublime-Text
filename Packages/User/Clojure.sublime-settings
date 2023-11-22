@@ -1,8 +1,7 @@
 // These settings override both User and Default settings for the Clojure syntax
 {
-    // "line_numbers": false,
-    "auto_complete": false,
-    "color_scheme": "Guna.sublime-color-scheme",
-    "gutter": false,
-    "draw_centered": true,
+	"gutter": false,
+	"draw_centered": true,
+	"font_size": 13,
+	"margin": 0,
 }

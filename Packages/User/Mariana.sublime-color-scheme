@@ -1,36 +1,57 @@
 // Documentation at https://www.sublimetext.com/docs/color_schemes.html
 {
-	"variables":
-	{
-		// "background": "#161C23",
-		// "comments": "rgba(166, 172, 185, 0.4)",
-		// "operator": "rgb(127, 127, 255)",
-	},
-	"globals":
-	{
-		// "brackets_options": "italic",
-		// "bracket_contents_options": "italic",
-		// "background": "var(background)",
-		// "brackets_foreground": "var(blue5)",
-		// "bracket_contents_foreground": "var(blue5)",
-	},
-	"rules":
-	[
-		// {
-        //     "name": "Comment",
-        //     "scope": "comment, punctuation.definition.comment",
-        //     "foreground": "var(comments)"
-        // },
-        // {
-        //     "name": "Operators",
-        //     "scope": "keyword.operator",
-        //     "foreground": "var(operator)",
-        //     "font_style": "italic",
-        // },
-        // {
-        //     "name": "Punctuation",
-        //     "scope": "punctuation.separator, punctuation.terminator",
-        //     "foreground": "var(operator)",
-        // },
-	]
+    "variables": {
+        "blue3": "hsl(210, 15%, 14%)",
+        "blue2": "hsla(210, 13%, 25%, 0.7)",
+        "blue6": "hsl(221, 12%, 44%)",
+        "purple": "hsl(261, 100%, 75%)",
+        "background": "#161C23",
+    },
+    "globals": {
+        "selection_border": "hsl(32, 93%, 25%)",
+        "background": "var(background)",
+    },
+    "rules": [
+        {
+            "name": "Important Comments",
+            "scope": "comments.important",
+            "foreground": "var(red)",
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        },
+        {
+            "scope": "comments.question",
+            "foreground": "var(blue)",
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        },
+        {
+            "scope": "comments.star",
+            "foreground": "var(lightGreen)",
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        },
+        {
+            "scope": "comments.todo",
+            "foreground": "var(orange)",
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        },
+        {
+            "scope": "comments.fixme",
+            "foreground": "var(yellow)",
+            "background": "color(var(white) alpha(0.002))"
+        },
+        {
+            "scope": "comments.mark",
+            "foreground": "color(var(white4) alpha(0.69))",
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        },
+        {
+            "scope": "comments.undefined",
+            "foreground": "color(var(white4) alpha(0.069))",
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        },
+        {
+            "scope": "comments.note",
+            "foreground": "var(purple)",
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        }
+    ]
 }

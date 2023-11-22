@@ -1,10 +1,7 @@
 <snippet>
     <content><![CDATA[bool isVowel(const char &c) {
-    return (
-               c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'
-               ||
-               c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U'
-           );
+    return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+            c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
 }]]></content>
     <tabTrigger>isVowel</tabTrigger>
     <scope>( source.objc | source.c++ | source.cpp | source.c ) - meta.preprocessor.include - comment - string</scope>

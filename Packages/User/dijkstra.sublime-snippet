@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[vector<int> dijkstra(Graph *g, int src = 0) {
+	priority_queue<pair<int, int>, vector<pair<int, int>>,
+				   greater<pair<int, int>>>
+		pq;
+	pq.push({0, src});
+	vector<int> dist(g->adj.size(), 1e9);
+	dist[src] = 0;
+	while (!pq.empty()) {
+		int d = pq.top().first, u = pq.top().second;
+		pq.pop();
+		if (d > dist[u]) continue;
+		for (auto v : g->adj[u]) {
+			if (dist[u] + g->weight[{u, v}] < dist[v]) {
+				dist[v] = dist[u] + g->weight[{u, v}];
+				pq.push({dist[v], v});
+			}
+		}
+	}
+	return dist;
+}]]></content>
+    <tabTrigger>dijkstra | graph</tabTrigger>
+    <scope>( source.objc | source.c++ | source.cpp ) - meta.preprocessor.include - comment - string</scope>
+    <description>Graph</description>
+</snippet>

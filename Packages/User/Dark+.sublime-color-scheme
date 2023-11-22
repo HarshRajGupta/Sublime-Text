@@ -362,39 +362,47 @@
             "scope": "message.error",
             "foreground": "var(red)"
         },
-
+        
         {
+            "name": "Important Comments",
             "scope": "comments.important",
             "foreground": "var(red)",
-            "background": "color(var(white) alpha(0.002))"
-        }, {
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        },
+        {
             "scope": "comments.question",
             "foreground": "var(blue)",
-            "background": "color(var(white) alpha(0.002))"
-        }, {
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        },
+        {
             "scope": "comments.star",
             "foreground": "var(lightGreen)",
-            "background": "color(var(white) alpha(0.002))",
-        }, {
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        },
+        {
             "scope": "comments.todo",
             "foreground": "var(orange)",
-            "background": "color(var(white) alpha(0.002))"
-        }, {
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        },
+        {
             "scope": "comments.fixme",
             "foreground": "var(yellow)",
             "background": "color(var(white) alpha(0.002))"
-        }, {
+        },
+        {
             "scope": "comments.mark",
             "foreground": "color(var(white4) alpha(0.69))",
-            "background": "color(var(black) alpha(0.069))",
-        }, {
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        },
+        {
             "scope": "comments.undefined",
             "foreground": "color(var(white4) alpha(0.069))",
-            "background": "color(var(black) alpha(0.069))",
-        }, {
+            "background": "hsla(210, 13%, 20%, 0.002)"
+        },
+        {
             "scope": "comments.note",
             "foreground": "var(purple)",
-            "background": "color(var(black) alpha(0.069))",
+            "background": "hsla(210, 13%, 20%, 0.002)"
         }
     ]
 }

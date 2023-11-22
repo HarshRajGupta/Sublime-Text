@@ -1,0 +1,49 @@
+{
+	"selector": "source.java",
+	"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+	"shell_cmd": "java \"${file}\" < input.txt > output.txt 2> log.txt",
+	"cancel": {
+		"kill": true
+	},
+	"windows": {
+		"working_dir": "/Users/Harsh/OneDrive/Documents/C++",
+	},
+	"variants": [
+		{
+			"name": "Build",
+			"shell_cmd": "java \"${file}\" < input.txt > output.txt 2> log.txt",
+		},
+		{
+			"name": "iJava (Tab)",
+			"target": "terminus_open",
+			"title": "Output",
+			"post_window_hooks": [
+				[
+					"unselect_to_right"
+				],
+				[
+					"select_to_left"
+				]
+			],
+			"shell_cmd": "java \"${file}\"",
+			"auto_close": false,
+		},
+		{
+			"name": "iJava (Shell)",
+			"target": "terminus_exec",
+			"shell_cmd": "java \"${file}\"",
+		},
+		{
+			"name": "Run",
+			"shell_cmd": "java \"${file}\" < input.txt > output.txt 2> log.txt",
+		},
+		{
+			"name": "Run and Commit",
+			"shell_cmd": "java \"${file}\" < input.txt > output.txt 2> log.txt && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
+		},
+		{
+			"name": "Debug and Commit",
+			"shell_cmd": "java \"${file}\" < input.txt > output.txt 2> log.txt && del a.exe && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
+		}
+	],
+}

@@ -1,0 +1,59 @@
+<snippet>
+    <content><![CDATA[import java.io.*;
+import java.util.*;
+
+final class Solve extends FastIO {
+
+    final public static void main(String[] args) {
+        solve();
+        out.flush();
+    }
+
+    static void solve() {
+        ${0}
+    }
+}
+
+class FastIO {
+    static final PrintWriter out = new PrintWriter(System.out);
+    static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+    static StringTokenizer st;
+
+    public static String next() {
+        while (st == null || !st.hasMoreElements()) {
+            try {
+                st = new StringTokenizer(br.readLine());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return st.nextToken();
+    }
+
+    public static int nextInt() {
+        return Integer.parseInt(next());
+    }
+
+    public static long nextLong() {
+        return Long.parseLong(next());
+    }
+
+    public static double nextDouble() {
+        return Double.parseDouble(next());
+    }
+
+    public static String nextLine() {
+        String str = "";
+        try {
+            str = br.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return str;
+    }
+}]]></content>
+    <tabTrigger>Solve</tabTrigger>
+    <scope>source.java</scope>
+    <description>Java | FastReader</description>
+</snippet>

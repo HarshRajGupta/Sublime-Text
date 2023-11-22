@@ -1,26 +1,42 @@
 {
     "default_config": {
-        "windows": "Git Bash",
+        "windows": "Bash",
     },
     "shell_configs": [
         {
-            "name": "Git Bash",
+            "name": "Bash",
+            "cmd": ["bash"],
+            "env": {},
             "enable": true,
-            "cmd": [
-                "C:/Program Files/Git/bin/bash.exe"
-            ],
             "platforms": [
+                "linux",
+                "osx",
+                "windows"
+            ],
+        },
+        {
+            "name": "Fish",
+            "cmd": [
+                "fish",
+            ],
+            "env": {},
+            "enable": true,
+            "platforms": [
+                "linux",
+                "osx",
                 "windows"
             ],
         },
     ],
-    // "256color": true,
-    "min_columns": 45,
-    // "max_columns": 172,
     "view_settings": {
-        "line_padding_top": 0,
+        "line_padding_top": 6,
         "line_padding_bottom": 12,
         "margin": 12,
-        "font_face": "ubuntu mono ligaturized"
+        "font_face": "ubuntu mono ligaturized",
     },
+    "size": [
+        100,
+        72
+    ],
+    "theme": "adaptive",
 }

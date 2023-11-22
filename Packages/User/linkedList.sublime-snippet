@@ -3,7 +3,7 @@
     int val;
     ListNode *next;
     ListNode(int x = 0, ListNode *next = NULL) : val(x), next(next) {}
-    void traverse(function<void(int)> f = [](int x) {cout << x << ' ';}) {
+    void traverse(function<void(int)> f = [](int x) { cout << x << ' '; }) {
         f(val);
         if (next) next->traverse(f);
     }

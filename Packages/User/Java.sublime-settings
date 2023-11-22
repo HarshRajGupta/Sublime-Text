@@ -1,4 +1,4 @@
-// These settings override both User and Default settings for the C++ syntax
+// These settings override both User and Default settings for the Java syntax
 {
 	"fold_buttons": true,
 	// "highlight_line": true,

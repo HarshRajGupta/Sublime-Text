@@ -1,0 +1,55 @@
+<snippet>
+    <content><![CDATA[template <typename T = long long> class lazyTree {
+	/* Customize the tree */
+	const T outLier = 0;
+	T combine(const T &a, const T &b) {
+		if (a == outLier)
+			return b;
+		else if (b == outLier)
+			return a;
+		else
+			return a + b;
+	}
+
+	vector<T> arr, tree;
+	void change(size_t node, size_t start, size_t end, size_t l, size_t r, const T& new_val) {
+		if (l > end || start > r) {
+			return;
+		} else if (l <= start && end <= r) {
+			tree[node] = combine(tree[node], new_val);
+		} else {
+			const size_t mid = (start + end) >> 1, child = (node << 1);
+			change(child + 1, start, mid, l, r, new_val);
+			change(child + 2, mid + 1, end, l, r, new_val);
+		}
+	}
+	T find(size_t node, size_t start, size_t end, size_t pos) {
+		if (start == end) {
+			return tree[node];
+		} else {
+			const size_t mid = (start + end) >> 1, child = (node << 1);
+			if (pos <= mid)
+				return combine(tree[node], find(child + 1, start, mid, pos));
+			else
+				return combine(tree[node], find(child + 2, mid + 1, end, pos));
+		}
+	}
+public:
+	lazyTree(const vector<T> &a) : arr(a) {
+		tree.resize(arr.size() << 2);
+	}
+	T querry(size_t pos) {
+		if (pos >= 0 && pos < arr.size())
+			return find(0u, 0u, arr.size() - 1, pos);
+		else
+			return outLier;
+	}
+	void update(size_t l, size_t r, const T& new_val) {
+		if (l <= r && r < arr.size() && l >= 0)
+			change(0u, 0u, arr.size() - 1, l, r, new_val);
+	}
+};]]></content>
+    <tabTrigger>Lazy Tree</tabTrigger>
+    <scope>( source.objc | source.c++ | source.cpp | source.c ) - meta.preprocessor.include - comment - string</scope>
+    <description>Lazy Tree</description>
+</snippet>

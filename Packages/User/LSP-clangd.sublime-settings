@@ -1,3 +1,11 @@
 {
-	"enabled": true
+	"enabled": true,
+	"initializationOptions": {
+        "clangd.function-arg-placeholders": true,
+        "clangd.header-insertion": "never",
+        "clangd.limit-references": 10,
+        "clangd.limit-results": 10,
+        "clangd.pretty": true,
+        "clangd.all-scopes-completion": true,
+    },
 }

@@ -1,43 +1,49 @@
 {
-    "selector": "source.c++",
-    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
-    "shell_cmd": "g++.exe -g -std=c++20 \"${file}\" 2> log.txt && a.exe < input.txt > output.txt 2> log.txt",
-    "linux": {
-        "shell_cmd": "g++ -g -std=c++20 \"${file}\" && a.out < input > output 2> log && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
-    },
-    "windows": {
-        "working_dir": "/Users/Harsh/OneDrive/Documents/C++",
-    },
-    "variants": [
-        {
-            "name": "Run & Commit",
-            "shell_cmd": "g++.exe -g -std=c++20 \"${file}\" 2> log.txt && a.exe < input.txt > output.txt 2> log.txt && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
-            "syntax": "Packages/Scala/Scala.sublime-syntax"
-        },
-        {
-            "name": "Clang",
-            "shell_cmd": "clang++.exe -g -std=c++20 \"${file}\" 2> log.txt && a.exe < input.txt > output.txt 2> log.txt && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
-            "syntax": "Packages/Scala/Scala.sublime-syntax"
-        },
-        {
-            "name": "iC++ (Tab)",
-            "target": "terminus_open",
-            "title": "Output",
-            "post_window_hooks": [
-                [
-                    "unselect_to_right"
-                ],
-                [
-                    "select_to_left"
-                ]
-            ],
-            "shell_cmd": "g++.exe -std=c++20 \"${file}\" && a.exe && del a.exe",
-            "auto_close": false,
-        },
-        {
-            "name": "iC++ (Shell)",
-            "target": "terminus_exec",
-            "shell_cmd": "g++.exe -std=c++20 \"${file}\" && a.exe && del a.exe",
-        }
-    ],
+	"selector": "source.c++",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"shell_cmd": "g++ -std=c++17 \"${file}\" 2> log.txt && a.exe < input.txt > output.txt 2> log.txt",
+	"cancel": {
+		"kill": true
+	},
+	"windows": {
+		"working_dir": "/Users/Harsh/OneDrive/Documents/C++",
+	},
+	"variants": [
+		{
+			"name": "Build",
+			"shell_cmd": "g++ -std=c++17 \"${file}\" 2> log.txt -o $file_base_name",
+		},
+		{
+			"name": "iC++ (Tab)",
+			"target": "terminus_open",
+			"title": "Output",
+			"post_window_hooks": [
+				[
+					"unselect_to_right"
+				],
+				[
+					"select_to_left"
+				]
+			],
+			"shell_cmd": "g++ -std=c++17 \"${file}\" 2> log.txt && a.exe && del a.exe",
+			"auto_close": false,
+		},
+		{
+			"name": "iC++ (Shell)",
+			"target": "terminus_exec",
+			"shell_cmd": "g++ -std=c++17 \"${file}\" 2> log.txt && a.exe && del a.exe",
+		},
+		{
+			"name": "Run",
+			"shell_cmd": "g++ -std=c++17 \"${file}\" 2> log.txt && a.exe < input.txt > output.txt 2> log.txt",
+		},
+		{
+			"name": "Run and Commit",
+			"shell_cmd": "g++ -std=c++17 \"${file}\" 2> log.txt && a.exe < input.txt > output.txt 2> log.txt && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
+		},
+		{
+			"name": "Debug and Commit",
+			"shell_cmd": "g++ -std=c++17 \"${file}\" 2> log.txt && a.exe < input.txt > output.txt 2> log.txt && del a.exe && cd \"${file_path}\" && git add \"${file}\" && git commit -m \"${file_base_name}\"",
+		}
+	],
 }
